@@ -2,7 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   return (
@@ -43,8 +44,8 @@ const Home: NextPage = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div className="flex justify-around">
-                  <p>GITHUB</p>
-                  <p>DEMO</p>
+                  <p className="font-bold">GITHUB</p>
+                  <p className="text-orange-500">DEMO</p>
                 </div>
               </div>
             </div>
@@ -63,18 +64,60 @@ const Home: NextPage = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div className="flex justify-around">
-                  <p>GITHUB</p>
-                  <p>DEMO</p>
+                  <p className="font-bold">GITHUB</p>
+                  <p className="text-orange-500">DEMO</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section></section>
+        <section className="mt-60 w-full">
+          <h1 className="text-3xl text-orange-500">Skills</h1>
+          <div className="flex flex-wrap md:flex-row gap-8 mx-0 md:justify-around pt-10">
+            <div>
+              <h2 className="font-bold text-xl">Languages</h2>
+              <ul className="pt-3">
+                <li>o JavaScript</li>
+                <li>o Python</li>
+                <li>o C++</li>
+                <li>o C</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="font-bold text-xl">Technologies</h2>
+              <ul className="pt-3">
+                <li>o React</li>
+                <li>o Vue</li>
+                <li>o Firebase</li>
+                <li>o MongoDB</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="font-bold text-xl">Tools</h2>
+              <ul className="pt-3">
+                <li>o VSCode</li>
+                <li>o Git</li>
+                <li>o Heroku</li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className="flex h-12 w-full items-center justify-center border-t mt-16"></footer>
+      <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t mt-24">
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          style={{ fontSize: 23, color: "dodgerblue" }}
+        />
+        <FontAwesomeIcon icon={faGithub} style={{ fontSize: 23 }} />
+        <FontAwesomeIcon
+          icon={faYoutube}
+          style={{ fontSize: 23, color: "red" }}
+        />
+      </footer>
     </div>
   );
 };
