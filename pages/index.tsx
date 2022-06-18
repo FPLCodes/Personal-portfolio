@@ -23,15 +23,12 @@ const Home: NextPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h2>
-          <div className="self-center absolute bottom-20">
-            <FontAwesomeIcon
-              icon={faAngleDown}
-              style={{ fontSize: 30, color: "orange" }}
-            />
-          </div>
         </header>
-        <section className="flex flex-col w-full gap-y-40 mt-40">
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start">
+        <section className="flex flex-col w-full gap-y-60 mt-40">
+          <div
+            id="project1"
+            className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start"
+          >
             <h1 className="w-max text-2xl">Project 1</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
@@ -74,8 +71,8 @@ const Home: NextPage = () => {
 
         <section className="mt-60 w-full">
           <h1 className="text-3xl text-orange-500">Skills</h1>
-          <div className="flex flex-wrap md:flex-row gap-8 mx-0 md:justify-around pt-10">
-            <div>
+          <div className="flex flex-wrap gap-y-4 w-full justify-around md:justify-around pt-16">
+            <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Languages</h2>
               <ul className="pt-3">
                 <li>o JavaScript</li>
@@ -85,7 +82,7 @@ const Home: NextPage = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Technologies</h2>
               <ul className="pt-3">
                 <li>o React</li>
@@ -95,12 +92,20 @@ const Home: NextPage = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Tools</h2>
               <ul className="pt-3">
                 <li>o VSCode</li>
                 <li>o Git</li>
                 <li>o Heroku</li>
+              </ul>
+            </div>
+
+            <div className="w-1/2 md:w-max">
+              <h2 className="font-bold text-xl">Design</h2>
+              <ul className="pt-3">
+                <li>o Photoshop</li>
+                <li>o Figma</li>
               </ul>
             </div>
           </div>
