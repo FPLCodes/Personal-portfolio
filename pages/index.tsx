@@ -26,12 +26,14 @@ const Home: NextPage = () => {
         </header>
 
         <section className="flex flex-col w-full gap-y-60 mt-40">
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start">
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start">
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
-                src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
-                className={"self-center md:w-64"}
+                src="SocialLite.png"
+                className={
+                  "self-center rounded-lg md:w-80 transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                }
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
@@ -58,12 +60,14 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2  self-center md:self-end">
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end">
             <h1 className="w-full text-3xl">Tic-tac-toe</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
-                src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
-                className={"self-center md:w-64"}
+                src="tic-tac-toe.png"
+                className={
+                  "self-center md:w-80 rounded-lg transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                }
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
@@ -90,12 +94,14 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start">
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start">
             <h1 className="w-full text-3xl">AniCountdown bot</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
                 src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
-                className={"self-center md:w-64"}
+                className={
+                  "self-center md:w-80 rounded-lg transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                }
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
@@ -114,12 +120,14 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2  self-center md:self-end">
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end">
             <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
                 src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
-                className={"self-center md:w-64"}
+                className={
+                  "self-center md:w-80 rounded-lg transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                }
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
@@ -149,50 +157,50 @@ const Home: NextPage = () => {
 
         <section className="mt-60 w-full">
           <h1 className="text-3xl text-orange-500">Skills</h1>
-          <div className="flex flex-col gap-y-4 w-full justify-around md:justify-around pt-16">
+          <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
             <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Languages</h2>
               <ul className="pt-3 flex gap-x-6 w-max text-center">
                 <li>
-                  <img src="../js.png" width={"75px"} className="rounded-lg" />
+                  <img src="js.png" width={"75px"} className="rounded-lg" />
                   JavaScript
                 </li>
                 <li>
-                  <img src="../python.png" width={"75px"} /> Python
+                  <img src="python.png" width={"75px"} /> Python
                 </li>
                 <li>
-                  <img src="../c++.png" width={"75px"} /> C++
+                  <img src="c++.png" width={"75px"} /> C++
                 </li>
                 <li>
-                  <img src="../c.png" width={"67px"} /> C
+                  <img src="c.png" width={"67px"} /> C
                 </li>
               </ul>
             </div>
 
             <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Technologies</h2>
-              <ul className="pt-3">
-                <li>o React</li>
-                <li>o Vue</li>
-                <li>o Firebase</li>
-                <li>o MongoDB</li>
+              <ul className="pt-3 flex gap-x-6 w-max text-center">
+                <li>React</li>
+                <li>Vue</li>
+                <li>Firebase</li>
+                <li>MongoDB</li>
               </ul>
             </div>
 
             <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Tools</h2>
-              <ul className="pt-3">
-                <li>o VSCode</li>
-                <li>o Git</li>
-                <li>o Heroku</li>
+              <ul className="pt-3 flex gap-x-6 w-max text-center">
+                <li>VSCode</li>
+                <li>Git</li>
+                <li>Heroku</li>
               </ul>
             </div>
 
             <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Design</h2>
-              <ul className="pt-3">
-                <li>o Photoshop</li>
-                <li>o Figma</li>
+              <ul className="pt-3 flex gap-x-6 w-max text-center">
+                <li>Photoshop</li>
+                <li>Figma</li>
               </ul>
             </div>
           </div>
