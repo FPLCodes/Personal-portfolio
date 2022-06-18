@@ -3,7 +3,7 @@ import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faYoutube, faJs } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   return (
@@ -35,7 +35,8 @@ const Home: NextPage = () => {
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
-                  An online messaging platform made with MEVN stack & Firebase.
+                  An online messaging platform where you can message other users
+                  around the world.
                 </p>
                 <div className="flex justify-around">
                   <a
@@ -66,7 +67,8 @@ const Home: NextPage = () => {
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
-                  Simple tic-tac-toe game made with React.
+                  A simple web app game where you can play tic-tac-toe with
+                  someone else or with a bot.
                 </p>
                 <div className="flex justify-around">
                   <a
@@ -97,8 +99,7 @@ const Home: NextPage = () => {
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
-                  An anime countdown bot for discord called "AniCountdown" made
-                  fully in JavaScript using discord.js.
+                  An anime (episode release) countdown bot for discord.
                 </p>
                 <div className="flex justify-around">
                   <a
@@ -122,8 +123,8 @@ const Home: NextPage = () => {
               />
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg">
-                  A bar chart representing the GPD of the United States from
-                  1947-2015 made with ReactJS and D3
+                  An interactive bar chart representing the GPD of the United
+                  States from 1947-2015.
                 </p>
                 <div className="flex justify-around">
                   <a
@@ -148,14 +149,23 @@ const Home: NextPage = () => {
 
         <section className="mt-60 w-full">
           <h1 className="text-3xl text-orange-500">Skills</h1>
-          <div className="flex flex-wrap gap-y-4 w-full justify-around md:justify-around pt-16">
+          <div className="flex flex-col gap-y-4 w-full justify-around md:justify-around pt-16">
             <div className="w-1/2 md:w-max">
               <h2 className="font-bold text-xl">Languages</h2>
-              <ul className="pt-3">
-                <li>o JavaScript</li>
-                <li>o Python</li>
-                <li>o C++</li>
-                <li>o C</li>
+              <ul className="pt-3 flex gap-x-6 w-max text-center">
+                <li>
+                  <img src="../js.png" width={"75px"} className="rounded-lg" />
+                  JavaScript
+                </li>
+                <li>
+                  <img src="../python.png" width={"75px"} /> Python
+                </li>
+                <li>
+                  <img src="../c++.png" width={"75px"} /> C++
+                </li>
+                <li>
+                  <img src="../c.png" width={"67px"} /> C
+                </li>
               </ul>
             </div>
 
