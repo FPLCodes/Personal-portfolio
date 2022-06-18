@@ -24,45 +24,122 @@ const Home: NextPage = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h2>
         </header>
+
         <section className="flex flex-col w-full gap-y-60 mt-40">
-          <div
-            id="project1"
-            className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start"
-          >
-            <h1 className="w-max text-2xl">Project 1</h1>
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start">
+            <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
                 src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
                 className={"self-center md:w-64"}
               />
               <div className="w-full flex flex-col justify-between">
-                <p className="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="mb-4 text-lg">
+                  An online messaging platform made with MEVN stack & Firebase.
                 </p>
                 <div className="flex justify-around">
-                  <p className="font-bold">GITHUB</p>
-                  <p className="text-orange-500">DEMO</p>
+                  <a
+                    href="https://github.com/FPLCodes/SocialLite"
+                    target="_blank"
+                    className="font-bold"
+                  >
+                    GITHUB
+                  </a>
+                  <a
+                    href="https://social-lite-app.herokuapp.com/"
+                    target="_blank"
+                    className="text-orange-500 font-bold"
+                  >
+                    DEMO
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2  self-center md:self-end">
-            <h1 className="w-max text-2xl">Project 2</h1>
+            <h1 className="w-full text-3xl">Tic-tac-toe</h1>
             <div className="flex flex-col md:flex-row gap-x-3 w-full">
               <img
                 src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
                 className={"self-center md:w-64"}
               />
               <div className="w-full flex flex-col justify-between">
-                <p className="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="mb-4 text-lg">
+                  Simple tic-tac-toe game made with React.
                 </p>
                 <div className="flex justify-around">
-                  <p className="font-bold">GITHUB</p>
-                  <p className="text-orange-500">DEMO</p>
+                  <a
+                    href="https://github.com/FPLCodes/Tic-tac-toe"
+                    target="_blank"
+                    className="font-bold"
+                  >
+                    GITHUB
+                  </a>
+                  <a
+                    href="https://tictactoe-fp.netlify.app/"
+                    target="_blank"
+                    className="text-orange-500 font-bold"
+                  >
+                    DEMO
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2 self-center md:self-start">
+            <h1 className="w-full text-3xl">AniCountdown bot</h1>
+            <div className="flex flex-col md:flex-row gap-x-3 w-full">
+              <img
+                src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
+                className={"self-center md:w-64"}
+              />
+              <div className="w-full flex flex-col justify-between">
+                <p className="mb-4 text-lg">
+                  An anime countdown bot for discord called "AniCountdown" made
+                  fully in JavaScript using discord.js.
+                </p>
+                <div className="flex justify-around">
+                  <a
+                    href="https://github.com/FPLCodes/Anime-Countdown-Bot"
+                    target="_blank"
+                    className="font-bold"
+                  >
+                    GITHUB
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-1/2  self-center md:self-end">
+            <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
+            <div className="flex flex-col md:flex-row gap-x-3 w-full">
+              <img
+                src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
+                className={"self-center md:w-64"}
+              />
+              <div className="w-full flex flex-col justify-between">
+                <p className="mb-4 text-lg">
+                  A bar chart representing the GPD of the United States from
+                  1947-2015 made with ReactJS and D3
+                </p>
+                <div className="flex justify-around">
+                  <a
+                    href="https://github.com/FPLCodes/US-GPD"
+                    target="_blank"
+                    className="font-bold"
+                  >
+                    GITHUB
+                  </a>
+                  <a
+                    href="https://us-gdp.netlify.app/"
+                    target="_blank"
+                    className="text-orange-500 font-bold"
+                  >
+                    DEMO
+                  </a>
                 </div>
               </div>
             </div>
