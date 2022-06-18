@@ -14,13 +14,15 @@ const Home: NextPage = () => {
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle">
-          <h1 className="text-5xl xl:text-6xl max-w-xl">Hello 👋 I'm</h1>
-          <h1 className="text-5xl xl:text-6xl max-w-xl">Sahab Ul Ferdous</h1>
+          <div>
+            <h1 className="text-5xl xl:text-6xl max-w-xl">Hello 👋 I'm</h1>
+            <h1 className="text-5xl xl:text-6xl max-w-xl">Sahab Ul Ferdous</h1>
+          </div>
           <h2 className="text-3xl xl:text-4xl max-w-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h2>
-          <div>
+          <div className="self-center absolute bottom-20">
             <FontAwesomeIcon
               icon={faAngleDown}
               style={{ fontSize: 30, color: "orange" }}
@@ -42,7 +44,7 @@ const Home: NextPage = () => {
                 </p>
                 <div className="flex justify-around">
                   <p>GITHUB</p>
-                  <p>WEBSITE</p>
+                  <p>DEMO</p>
                 </div>
               </div>
             </div>
@@ -62,7 +64,7 @@ const Home: NextPage = () => {
                 </p>
                 <div className="flex justify-around">
                   <p>GITHUB</p>
-                  <p>WEBSITE</p>
+                  <p>DEMO</p>
                 </div>
               </div>
             </div>
