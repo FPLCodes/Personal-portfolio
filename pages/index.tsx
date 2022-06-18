@@ -1,86 +1,72 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>Sahab Ul Ferdous</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-center">
+        <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-left">
+          <h1 className="text-5xl xl:text-6xl max-w-xl">Hello 👋 I'm</h1>
+          <h1 className="text-5xl xl:text-6xl max-w-xl">Sahab Ul Ferdous</h1>
+          <h2 className="text-3xl xl:text-4xl max-w-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+        </header>
+        <section className="flex flex-col w-full gap-y-40">
+          <div className="flex flex-col flex-1 gap-y-2">
+            <h1 className="w-max text-2xl">Project 1</h1>
+            <div className="flex gap-x-3 w-max">
+              <img
+                src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
+                width={"200px"}
+                height={"200px"}
+              />
+              <div>
+                <p className="w-40 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div className="flex justify-around">
+                  <p>GITHUB</p>
+                  <p>WEBSITE</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          <div className="flex flex-col flex-1 gap-y-2">
+            <h1 className="w-max text-2xl self-end">Project 2</h1>
+            <div className="flex gap-x-3 w-max self-end">
+              <div>
+                <p className="w-40 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div className="flex justify-around">
+                  <p>GITHUB</p>
+                  <p>WEBSITE</p>
+                </div>
+              </div>
+              <img
+                src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
+                width={"200px"}
+                height={"200px"}
+              />
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+      <footer className="flex h-12 w-full items-center justify-center border-t"></footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
