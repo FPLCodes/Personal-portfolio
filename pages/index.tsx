@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faYoutube, faJs } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
@@ -14,18 +14,28 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-left text-zinc-700">
-        <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle">
+        <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
           <div>
             <h1 className="text-5xl xl:text-6xl max-w-xl">Hello, 👋 I'm</h1>
-            <h1 className="text-5xl xl:text-6xl max-w-xl">Sahab Ul Ferdous</h1>
+            <h1 className="text-5xl xl:text-6xl max-w-xl font-bold">
+              Sahab Ul Ferdous
+            </h1>
           </div>
           <h2 className="text-3xl xl:text-4xl max-w-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h2>
+          <div className="absolute place-self-center bottom-32 transition-all hover:pb-2">
+            <a href="#projects">
+              <FontAwesomeIcon
+                icon={faArrowDown}
+                style={{ fontSize: 28, color: "darkorange" }}
+              />
+            </a>
+          </div>
         </header>
 
-        <section className="flex flex-col w-full gap-y-60 mt-40">
+        <section id="projects" className="flex flex-col w-full gap-y-60 pt-40">
           <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start">
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
@@ -136,6 +146,9 @@ const Home: NextPage = () => {
                   </p>
                   <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
                     Discord.js
+                  </p>
+                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    Puppeteer
                   </p>
                 </div>
               </div>
