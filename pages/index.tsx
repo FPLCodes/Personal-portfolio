@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                     target="_blank"
                     className="text-orange-500 font-bold"
                   >
-                    DEMO
+                    LIVE SITE
                   </a>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
                     target="_blank"
                     className="text-orange-500 font-bold"
                   >
-                    DEMO
+                    LIVE SITE
                   </a>
                 </div>
               </div>
@@ -147,7 +147,7 @@ const Home: NextPage = () => {
                     target="_blank"
                     className="text-orange-500 font-bold"
                   >
-                    DEMO
+                    LIVE SITE
                   </a>
                 </div>
               </div>
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
             <ul className="pt-3 flex flex-wrap gap-6 w-full text-center justify-center">
               <li>
-                <img src="js.png" width={"75px"} className="rounded-lg" />
+                <img src="js.png" width={"75px"} />
                 JavaScript
               </li>
               <li>
@@ -168,9 +168,6 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <img src="c++.png" width={"75px"} /> C++
-              </li>
-              <li>
-                <img src="c.png" width={"67px"} /> C
               </li>
 
               <li>
@@ -215,21 +212,6 @@ const Home: NextPage = () => {
                   width="75px"
                 />
                 Git
-              </li>
-              <li>
-                <img
-                  src="https://www.svgrepo.com/show/349404/heroku.svg"
-                  width="75px"
-                />
-                Heroku
-              </li>
-
-              <li>
-                <img
-                  src="https://www.svgrepo.com/show/75896/psd.svg"
-                  width="75px"
-                />
-                Photoshop
               </li>
             </ul>
           </div>
