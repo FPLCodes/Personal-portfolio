@@ -156,53 +156,82 @@ const Home: NextPage = () => {
         </section>
 
         <section className="mt-60 w-full">
-          <h1 className="text-3xl text-orange-500">Skills</h1>
+          <h1 className="text-4xl text-orange-500">Skills</h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
-            <div className="w-1/2 md:w-max">
-              <h2 className="font-bold text-xl">Languages</h2>
-              <ul className="pt-3 flex gap-x-6 w-max text-center">
-                <li>
-                  <img src="js.png" width={"75px"} className="rounded-lg" />
-                  JavaScript
-                </li>
-                <li>
-                  <img src="python.png" width={"75px"} /> Python
-                </li>
-                <li>
-                  <img src="c++.png" width={"75px"} /> C++
-                </li>
-                <li>
-                  <img src="c.png" width={"67px"} /> C
-                </li>
-              </ul>
-            </div>
+            <ul className="pt-3 flex flex-wrap gap-6 w-full text-center justify-center">
+              <li>
+                <img src="js.png" width={"75px"} className="rounded-lg" />
+                JavaScript
+              </li>
+              <li>
+                <img src="python.png" width={"75px"} /> Python
+              </li>
+              <li>
+                <img src="c++.png" width={"75px"} /> C++
+              </li>
+              <li>
+                <img src="c.png" width={"67px"} /> C
+              </li>
 
-            <div className="w-1/2 md:w-max">
-              <h2 className="font-bold text-xl">Technologies</h2>
-              <ul className="pt-3 flex gap-x-6 w-max text-center">
-                <li>React</li>
-                <li>Vue</li>
-                <li>Firebase</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/354259/react.svg"
+                  width="75px"
+                />
+                React
+              </li>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/354528/vue.svg"
+                  width="75px"
+                />
+                Vue
+              </li>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/353735/firebase.svg"
+                  width="75px"
+                />
+                Firebase
+              </li>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/373307/mongodb-opened.svg"
+                  width="75px"
+                />
+                MongoDB
+              </li>
 
-            <div className="w-1/2 md:w-max">
-              <h2 className="font-bold text-xl">Tools</h2>
-              <ul className="pt-3 flex gap-x-6 w-max text-center">
-                <li>VSCode</li>
-                <li>Git</li>
-                <li>Heroku</li>
-              </ul>
-            </div>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/374171/vscode.svg"
+                  width="75px"
+                />
+                VSCode
+              </li>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/373623/git.svg"
+                  width="75px"
+                />
+                Git
+              </li>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/349404/heroku.svg"
+                  width="75px"
+                />
+                Heroku
+              </li>
 
-            <div className="w-1/2 md:w-max">
-              <h2 className="font-bold text-xl">Design</h2>
-              <ul className="pt-3 flex gap-x-6 w-max text-center">
-                <li>Photoshop</li>
-                <li>Figma</li>
-              </ul>
-            </div>
+              <li>
+                <img
+                  src="https://www.svgrepo.com/show/75896/psd.svg"
+                  width="75px"
+                />
+                Photoshop
+              </li>
+            </ul>
           </div>
         </section>
       </main>
