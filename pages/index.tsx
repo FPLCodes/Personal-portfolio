@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           >
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
-              <div className="w-full flex flex-col gap-y-2">
+              <div className="w-full flex flex-col gap-y-3">
                 <Image
                   src={SocialLite}
                   alt="Screenshot of SocialLite"
@@ -114,8 +114,8 @@ const Home: NextPage = () => {
             className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
           >
             <h1 className="w-full text-3xl">Tic-tac-toe</h1>
-            <div className="flex flex-col md:flex-row gap-x-4">
-              <div className="w-full flex flex-col gap-y-2">
+            <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
+              <div className="w-full flex flex-col gap-y-3">
                 <Image
                   src={TicTacToe}
                   alt="Screenshot of tic-tac-toe"
@@ -165,14 +165,14 @@ const Home: NextPage = () => {
           >
             <h1 className="w-full text-3xl">AniCountdown bot</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
-              <div className="w-full flex flex-col gap-y-2">
+              <div className="w-full flex flex-col gap-y-3">
                 <img
                   src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
                   className={
                     "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
+                <div className="flex flex-wrap gap-x-3 gap-y-3 text-xs">
                   <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
                     JavaScript
                   </p>
@@ -184,11 +184,11 @@ const Home: NextPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full flex flex-col gap-y-2 justify-between">
+              <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg font-light">
                   An anime (episode release) countdown bot for discord.
                 </p>
-                <div className="flex justify-around">
+                <div className="flex justify-center">
                   <a
                     href="https://github.com/FPLCodes/Anime-Countdown-Bot"
                     target="_blank"
@@ -208,8 +208,8 @@ const Home: NextPage = () => {
             className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
           >
             <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
-            <div className="flex flex-col md:flex-row gap-x-4">
-              <div className="w-full flex flex-col gap-y-2">
+            <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
+              <div className="w-full flex flex-col gap-y-3">
                 <img
                   src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
                   className={
@@ -328,10 +328,21 @@ const Home: NextPage = () => {
           className="mt-60 w-full"
         >
           <h1 className="text-4xl font-bold text-orange-500">Background</h1>
-          <div className="pt-16">
+          <div className="pt-16 font-light space-y-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              I am an <b>18 year old student</b> who loves coding 👨‍💻
+            </p>
+            <p>
+              I've always enjoyed creating things and wanted to create my own
+              video game, however I had no idea where to start.{" "}
+              <b>For over 2 years</b> I used my free time to learn programming
+              languages and technologies, as well as algorithms and data
+              structures through YouTube and online courses. I also found a new
+              love for web development.
+            </p>
+            <p>
+              <b>When I'm not coding</b> I'm probably gaming , watching anime,
+              or doing calisthenics.
             </p>
           </div>
         </section>
