@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SocialLite from "../public/SocialLite.png";
@@ -15,7 +16,24 @@ const Home: NextPage = () => {
       <Head>
         <title>Sahab Ul Ferdous</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+          integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
       </Head>
+      <Script
+        id="aos"
+        src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        onLoad={() => {
+          AOS.init();
+        }}
+        onError={(e) => {
+          console.error("aos script failed to load", e);
+        }}
+      ></Script>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
@@ -40,7 +58,11 @@ const Home: NextPage = () => {
         </header>
 
         <section id="projects" className="flex flex-col w-full gap-y-60 pt-40">
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="700"
+            className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start"
+          >
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-2">
@@ -91,7 +113,11 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="700"
+            className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
+          >
             <h1 className="w-full text-3xl">Tic-tac-toe</h1>
             <div className="flex flex-col md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-2">
@@ -136,7 +162,11 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="700"
+            className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start"
+          >
             <h1 className="w-full text-3xl">AniCountdown bot</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-2">
@@ -175,7 +205,11 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="700"
+            className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
+          >
             <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
             <div className="flex flex-col md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-2">
@@ -223,7 +257,11 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="mt-60 w-full">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="mt-60 w-full"
+        >
           <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
             <ul className="pt-3 flex flex-wrap gap-6 w-full text-center justify-center">
@@ -285,7 +323,11 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="mt-60 w-full">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="mt-60 w-full"
+        >
           <h1 className="text-4xl font-bold text-orange-500">Background</h1>
           <div className="pt-16">
             <p>
