@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SocialLite from "../public/SocialLite.png";
+import TicTacToe from "../public/tic-tac-toe.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faYoutube, faJs } from "@fortawesome/free-brands-svg-icons";
@@ -94,8 +95,9 @@ const Home: NextPage = () => {
             <h1 className="w-full text-3xl">Tic-tac-toe</h1>
             <div className="flex flex-col md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-2">
-                <img
-                  src="tic-tac-toe.png"
+                <Image
+                  src={TicTacToe}
+                  alt="Screenshot of tic-tac-toe"
                   className={
                     "self-center md:w-full rounded-sm transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
                   }
@@ -197,8 +199,8 @@ const Home: NextPage = () => {
               </div>
               <div className="w-full flex flex-col justify-between">
                 <p className="mb-4 text-lg font-light">
-                  An interactive bar chart representing the GPD of the United
-                  States from 1947-2015.
+                  An interactive bar chart web app representing the GPD of the
+                  United States from 1947-2015.
                 </p>
                 <div className="flex justify-around">
                   <a
@@ -285,11 +287,15 @@ const Home: NextPage = () => {
       </main>
 
       <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t mt-24">
-        <FontAwesomeIcon
-          icon={faEnvelope}
-          style={{ fontSize: 24, color: "dodgerblue" }}
-        />
-        <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
+        <a href="mailto:sahabferdous1@gmail.com">
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            style={{ fontSize: 24, color: "dodgerblue" }}
+          />
+        </a>
+        <a href="https://github.com/FPLCodes" target="_blank">
+          <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
+        </a>
       </footer>
     </div>
   );
