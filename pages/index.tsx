@@ -11,13 +11,13 @@ import { faGithub, faYoutube, faJs } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen scroll-smooth flex-col items-center justify-center">
+    <div className="flex min-h-screen scroll-smooth flex-col items-center justify-center text-zinc-700">
       <Head>
         <title>Sahab Ul Ferdous</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-left text-zinc-700">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
           <div>
             <h1 className="text-5xl xl:text-6xl max-w-xl">Hello, 👋 I'm</h1>
@@ -29,11 +29,11 @@ const Home: NextPage = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h2>
-          <div className="absolute place-self-center bottom-32 transition-all hover:pb-2">
+          <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
               <FontAwesomeIcon
                 icon={faArrowDown}
-                style={{ fontSize: 28, color: "darkorange" }}
+                style={{ fontSize: 30, color: "darkorange" }}
               />
             </a>
           </div>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
                   src={SocialLite}
                   alt="Screenshot of SocialLite"
                   className={
-                    "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                    "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
                 <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
@@ -99,7 +99,7 @@ const Home: NextPage = () => {
                   src={TicTacToe}
                   alt="Screenshot of tic-tac-toe"
                   className={
-                    "self-center md:w-full rounded-sm transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                    "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
                 <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
                 <img
                   src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
                   className={
-                    "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                    "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
                 <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
@@ -182,7 +182,7 @@ const Home: NextPage = () => {
                 <img
                   src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
                   className={
-                    "self-center md:w-full rounded-sm transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+                    "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
                 <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
@@ -284,9 +284,19 @@ const Home: NextPage = () => {
             </ul>
           </div>
         </section>
+
+        <section className="mt-60 w-full">
+          <h1 className="text-4xl font-bold text-orange-500">Background</h1>
+          <div className="pt-16">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </section>
       </main>
 
-      <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t mt-24">
+      <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t mt-32 bg-gray-100">
         <a href="mailto:sahabferdous1@gmail.com">
           <FontAwesomeIcon
             icon={faEnvelope}
