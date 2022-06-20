@@ -8,21 +8,14 @@ import SocialLite from "../public/SocialLite.png";
 import TicTacToe from "../public/tic-tac-toe.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faYoutube, faJs } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen scroll-smooth flex-col items-center justify-center text-zinc-700">
+    <div className="flex min-h-screen flex-col items-center justify-center text-zinc-700">
       <Head>
         <title>Sahab Ul Ferdous</title>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-          integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
       </Head>
       <Script
         id="aos"
@@ -61,6 +54,7 @@ const Home: NextPage = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="700"
+            data-aos-once="true"
             className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start"
           >
             <h1 className="w-full text-3xl">SocialLite</h1>
@@ -116,6 +110,7 @@ const Home: NextPage = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="700"
+            data-aos-once="true"
             className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
           >
             <h1 className="w-full text-3xl">Tic-tac-toe</h1>
@@ -165,6 +160,7 @@ const Home: NextPage = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="700"
+            data-aos-once="true"
             className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-start"
           >
             <h1 className="w-full text-3xl">AniCountdown bot</h1>
@@ -208,6 +204,7 @@ const Home: NextPage = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="700"
+            data-aos-once="true"
             className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
           >
             <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
@@ -260,6 +257,7 @@ const Home: NextPage = () => {
         <section
           data-aos="fade-up"
           data-aos-duration="700"
+          data-aos-once="true"
           className="mt-60 w-full"
         >
           <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
@@ -326,6 +324,7 @@ const Home: NextPage = () => {
         <section
           data-aos="fade-up"
           data-aos-duration="700"
+          data-aos-once="true"
           className="mt-60 w-full"
         >
           <h1 className="text-4xl font-bold text-orange-500">Background</h1>
