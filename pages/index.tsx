@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import SocialLite from "../public/SocialLite.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faYoutube, faJs } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   return (
-    <html className="flex min-h-screen scroll-smooth flex-col items-center justify-center">
+    <div className="flex min-h-screen scroll-smooth flex-col items-center justify-center">
       <Head>
         <title>Sahab Ul Ferdous</title>
         <link rel="icon" href="/favicon.ico" />
@@ -40,8 +43,9 @@ const Home: NextPage = () => {
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-2">
-                <img
-                  src="SocialLite.png"
+                <Image
+                  src={SocialLite}
+                  alt="Screenshot of SocialLite"
                   className={
                     "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
                   }
@@ -287,7 +291,7 @@ const Home: NextPage = () => {
         />
         <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
       </footer>
-    </html>
+    </div>
   );
 };
 
