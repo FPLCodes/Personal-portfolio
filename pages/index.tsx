@@ -110,7 +110,7 @@ const Home: NextPage = () => {
                     >
                       GITHUB
                     </a>
-                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-gray-800 w-0 transition-all line-bg"></div>
                   </div>
                   <div className="line">
                     <a
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
                     >
                       LIVE SITE
                     </a>
-                    <div className="bg-orange-500 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-orange-500 w-0 transition-all line-bg"></div>
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
                     >
                       GITHUB
                     </a>
-                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-gray-800 w-0 transition-all line-bg"></div>
                   </div>
                   <div className="line">
                     <a
@@ -176,7 +176,7 @@ const Home: NextPage = () => {
                     >
                       LIVE SITE
                     </a>
-                    <div className="bg-orange-500 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-orange-500 w-0 transition-all line-bg"></div>
                   </div>
                 </div>
               </div>
@@ -224,7 +224,7 @@ const Home: NextPage = () => {
                     >
                       GITHUB
                     </a>
-                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-gray-800 w-0 transition-all line-bg"></div>
                   </div>
                 </div>
               </div>
@@ -273,7 +273,7 @@ const Home: NextPage = () => {
                     >
                       GITHUB
                     </a>
-                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-gray-800 w-0 transition-all line-bg"></div>
                   </div>
                   <div className="line">
                     <a
@@ -283,7 +283,7 @@ const Home: NextPage = () => {
                     >
                       LIVE SITE
                     </a>
-                    <div className="bg-orange-500 w-0 h-1 transition-all line-bg"></div>
+                    <div className="bg-orange-500 w-0 transition-all line-bg"></div>
                   </div>
                 </div>
               </div>
