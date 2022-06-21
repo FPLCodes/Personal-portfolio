@@ -392,18 +392,32 @@ const Home: NextPage = () => {
           data-aos-once="true"
           className="mt-48 w-full"
         >
+          <h1 className="text-4xl text-orange-500 font-bold mb-8">
+            Get in touch
+          </h1>
           <form
-            className="kwes-form border-2 rounded-lg space-y-8 px-10 pt-2 pb-10"
+            className="kwes-form lg:w-1/2 space-y-8 md:px-10 py-10"
             action="https://kwesforms.com/api/foreign/forms/VYUaY10qgL1m56DMgych"
             kw-cloak
           >
-            <h1 className="text-3xl">Get in touch</h1>
+            <div className="flex flex-col gap-y-2">
+              <label className="text-lg font-light" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="border-2 rounded-md md:w-2/3 h-10 px-2 bg-zinc-50"
+                type="text"
+                name="name"
+                required
+              ></input>
+            </div>
+
             <div className="flex flex-col gap-y-2">
               <label className="text-lg font-light" htmlFor="email">
                 Email
               </label>
               <input
-                className="border-2 rounded-md w-3/4 h-10 px-2 bg-zinc-100"
+                className="border-2 rounded-md md:w-2/3 h-10 px-2 bg-zinc-50"
                 type="email"
                 name="email"
                 required
@@ -415,14 +429,14 @@ const Home: NextPage = () => {
                 Message
               </label>
               <textarea
-                className="border-2 rounded-md w-3/4 h-32 px-2 bg-zinc-100"
+                className="border-2 rounded-md md:w-2/3 h-32 px-2 py-2 bg-zinc-50"
                 name="message"
                 required
               ></textarea>
             </div>
 
             <button
-              className="border-2 border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
+              className="border-2 w-full md:w-auto border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
               type="submit"
             >
               Send
