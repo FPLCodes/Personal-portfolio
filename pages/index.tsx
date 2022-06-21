@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SocialLite from "../public/SocialLite.png";
 import TicTacToe from "../public/tic-tac-toe.png";
+import AniCountdown from "../public/AniCountdown.png";
+import US_GDP from "../public/US-GDP.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -166,8 +168,9 @@ const Home: NextPage = () => {
             <h1 className="w-full text-3xl">AniCountdown bot</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
               <div className="w-full flex flex-col gap-y-3">
-                <img
-                  src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
+                <Image
+                  src={AniCountdown}
+                  alt="Screenshot of AniCountdown bot"
                   className={
                     "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
@@ -210,8 +213,9 @@ const Home: NextPage = () => {
             <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
             <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
               <div className="w-full flex flex-col gap-y-3">
-                <img
-                  src="https://downey.co.nz/wp-content/uploads/2015/09/awards-grey-box-large.jpg"
+                <Image
+                  src={US_GDP}
+                  alt="Screenshot of US-GDP Data Visualisation"
                   className={
                     "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
