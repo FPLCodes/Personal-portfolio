@@ -375,7 +375,7 @@ const Home: NextPage = () => {
               I've always enjoyed creating things and wanted to create my own
               video game, however I had no idea where to start.{" "}
               <b>For over 2 years</b> I used my free time to learn programming
-              languages and technologies, as well as algorithms and data
+              languages and new technologies, as well as algorithms and data
               structures through YouTube and online courses. During this period
               I also discovered a newfound love for web development.
             </p>
@@ -395,53 +395,68 @@ const Home: NextPage = () => {
           <h1 className="text-4xl text-orange-500 font-bold mb-8">
             Get in touch
           </h1>
-          <form
-            className="kwes-form lg:w-1/2 space-y-8 md:px-10 py-10"
-            action="https://kwesforms.com/api/foreign/forms/VYUaY10qgL1m56DMgych"
-            kw-cloak
-          >
-            <div className="flex flex-col gap-y-2">
-              <label className="text-lg font-light" htmlFor="name">
-                Name
-              </label>
-              <input
-                className="border-2 rounded-md md:w-2/3 h-10 px-2 bg-zinc-50"
-                type="text"
-                name="name"
-                required
-              ></input>
+
+          <div className="flex flex-col md:flex-row md:items-center">
+            <div className="space-y-6 w-full md:w-1/2">
+              <div className="bg-zinc-100 p-3 rounded-md">
+                sahabferdous1@gmail
+              </div>
+
+              <div className="bg-zinc-100 p-3 rounded-md">FPLCodes</div>
+
+              <div className="bg-zinc-100 p-3 rounded-md">FPLogistic #7999</div>
             </div>
 
-            <div className="flex flex-col gap-y-2">
-              <label className="text-lg font-light" htmlFor="email">
-                Email
-              </label>
-              <input
-                className="border-2 rounded-md md:w-2/3 h-10 px-2 bg-zinc-50"
-                type="email"
-                name="email"
-                required
-              ></input>
-            </div>
+            <div className="bg-gray-300 hidden md:block w-1 h-40 place-self-center mx-10 lg:mx-20"></div>
 
-            <div className="flex flex-col gap-y-2">
-              <label className="text-lg font-light" htmlFor="message">
-                Message
-              </label>
-              <textarea
-                className="border-2 rounded-md md:w-2/3 h-32 px-2 py-2 bg-zinc-50"
-                name="message"
-                required
-              ></textarea>
-            </div>
-
-            <button
-              className="border-2 w-full md:w-auto border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
-              type="submit"
+            <form
+              className="kwes-form md:w-1/2 space-y-8 py-10 md:py-0"
+              action="https://kwesforms.com/api/foreign/forms/VYUaY10qgL1m56DMgych"
+              kw-cloak
             >
-              Send
-            </button>
-          </form>
+              <div className="flex flex-col gap-y-2">
+                <label className="text-lg font-light" htmlFor="name">
+                  Name
+                </label>
+                <input
+                  className="border-2 rounded-md h-12 px-2 bg-zinc-50"
+                  type="text"
+                  name="name"
+                  required
+                ></input>
+              </div>
+
+              <div className="flex flex-col gap-y-2">
+                <label className="text-lg font-light" htmlFor="email">
+                  Email
+                </label>
+                <input
+                  className="border-2 rounded-md h-12 px-2 bg-zinc-50"
+                  type="email"
+                  name="email"
+                  required
+                ></input>
+              </div>
+
+              <div className="flex flex-col gap-y-2">
+                <label className="text-lg font-light" htmlFor="message">
+                  Message
+                </label>
+                <textarea
+                  className="border-2 rounded-md h-40 px-2 py-2 bg-zinc-50"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                className="border-2 w-full md:w-auto border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </section>
       </main>
 
