@@ -23,8 +23,9 @@ const Home: NextPage = () => {
   };
 
   useEffect(() => {
-    let delay = 4500;
-    if (option !== 0) delay = 3500;
+    console.log(option);
+    let delay = 3400;
+    if (option === 0) delay = 4800;
     const textChange = setInterval(() => {
       changeOption();
     }, delay);
@@ -95,7 +96,7 @@ const Home: NextPage = () => {
       />
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-14 md:px-20 xl:px-40 2xl:px-52 text-left">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-12 md:px-20 xl:px-40 2xl:px-52 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
           <div>
             <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl">
