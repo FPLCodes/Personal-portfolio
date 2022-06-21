@@ -10,7 +10,7 @@ import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 const Home: NextPage = () => {
   return (
@@ -397,17 +397,24 @@ const Home: NextPage = () => {
           </h1>
 
           <div className="flex flex-col md:flex-row md:items-center">
-            <div className="space-y-6 w-full md:w-1/2">
-              <div className="bg-zinc-100 p-3 rounded-md">
-                sahabferdous1@gmail
+            <div className="space-y-8 w-full md:w-1/2">
+              <div className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md">
+                <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 22 }} />
+                <p>sahabferdous1@gmail</p>
               </div>
 
-              <div className="bg-zinc-100 p-3 rounded-md">FPLCodes</div>
+              <div className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md">
+                <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
+                <p>FPLCodes</p>
+              </div>
 
-              <div className="bg-zinc-100 p-3 rounded-md">FPLogistic #7999</div>
+              <div className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md">
+                <FontAwesomeIcon icon={faDiscord} style={{ fontSize: 20 }} />
+                <p>FPLogistic #7999</p>
+              </div>
             </div>
 
-            <div className="bg-gray-300 hidden md:block w-1 h-40 place-self-center mx-10 lg:mx-20"></div>
+            <div className="bg-gray-300 hidden md:block w-1 h-48 rounded-xl place-self-center mx-10 lg:mx-20 2xl:mx-32"></div>
 
             <form
               className="kwes-form md:w-1/2 space-y-8 py-10 md:py-0"
@@ -450,7 +457,7 @@ const Home: NextPage = () => {
               </div>
 
               <button
-                className="border-2 w-full md:w-auto border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
+                className="border-2 w-full lg:w-auto border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
                 type="submit"
               >
                 Send
@@ -461,15 +468,9 @@ const Home: NextPage = () => {
       </main>
 
       <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t mt-32 bg-gray-100">
-        <a href="mailto:sahabferdous1@gmail.com">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            style={{ fontSize: 24, color: "dodgerblue" }}
-          />
-        </a>
-        <a href="https://github.com/FPLCodes" target="_blank">
-          <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
-        </a>
+        <h1 className="text-xs font-light">
+          © 2022 Sahab Ul Ferdous. All rights reserved.
+        </h1>
       </footer>
     </div>
   );
