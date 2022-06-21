@@ -41,7 +41,8 @@ const Home: NextPage = () => {
         onError={(e) => {
           console.error("aos script failed to load", e);
         }}
-      ></Script>
+      />
+      <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 2xl:px-52 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
@@ -383,6 +384,50 @@ const Home: NextPage = () => {
               doing calisthenics 💪
             </p>
           </div>
+        </section>
+
+        <section
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-once="true"
+          className="mt-48 w-full"
+        >
+          <form
+            className="kwes-form border-2 rounded-lg space-y-8 px-10 pt-2 pb-10"
+            action="https://kwesforms.com/api/foreign/forms/VYUaY10qgL1m56DMgych"
+            kw-cloak
+          >
+            <h1 className="text-3xl">Get in touch</h1>
+            <div className="flex flex-col gap-y-2">
+              <label className="text-lg font-light" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="border-2 rounded-md w-3/4 h-10 px-2 bg-zinc-100"
+                type="email"
+                name="email"
+                required
+              ></input>
+            </div>
+
+            <div className="flex flex-col gap-y-2">
+              <label className="text-lg font-light" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                className="border-2 rounded-md w-3/4 h-32 px-2 bg-zinc-100"
+                name="message"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              className="border-2 border-orange-400 rounded-md px-6 py-2 text-white transition-all bg-orange-400 hover:bg-orange-500"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
         </section>
       </main>
 

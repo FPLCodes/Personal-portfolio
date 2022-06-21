@@ -28,3 +28,11 @@ body {
 .line:hover > .site-text {
   color: lightsalmon;
 }
+
+[kw-cloak] {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
