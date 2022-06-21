@@ -11,8 +11,68 @@ import US_GDP from "../public/US-GDP.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  const [option, setOption] = useState(0);
+  const [array, setArray] = useState([]);
+
+  const changeOption = () => {
+    if (option === 3) setOption(0);
+    else setOption((option) => option + 1);
+  };
+
+  useEffect(() => {
+    let delay = 4500;
+    if (option !== 0) delay = 3500;
+    const textChange = setInterval(() => {
+      changeOption();
+    }, delay);
+
+    return () => {
+      clearInterval(textChange);
+    };
+  }, [option]);
+
+  useEffect(() => {
+    let word = "";
+    {
+      option === 0
+        ? (word = "full stack developer")
+        : option === 1
+        ? (word = "student")
+        : option === 2
+        ? (word = "gamer")
+        : (word = "YouTuber");
+    }
+
+    const arr = [];
+    let i = 0;
+
+    const add = setInterval(() => {
+      arr.push(word[i]);
+      setArray([...arr]);
+      i++;
+      if (!word[i]) {
+        clearInterval(add);
+        setTimeout(() => {
+          const remove = setInterval(() => {
+            arr.pop();
+            setArray([...arr]);
+            if (!arr[0]) {
+              clearInterval(remove);
+            }
+          }, 50);
+        }, 2000);
+      }
+      //console.log(array.join(""));
+    }, 50);
+
+    return () => {
+      clearInterval(add);
+    };
+  }, [option]);
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center text-zinc-700">
       <Head>
@@ -45,9 +105,11 @@ const Home: NextPage = () => {
               Sahab Ul Ferdous
             </h1>
           </div>
-          <h2 className="text-2xl md:text-3xl xl:text-4xl max-w-xl">
-            18 year old full-stack developer
-          </h2>
+          <div className="text-2xl md:text-3xl xl:text-4xl max-w-xl flex gap-x-2">
+            <h2>18 year old</h2>
+            <h2>{array.join("")}</h2>
+            <p className="animate-pulse">|</p>
+          </div>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
               <FontAwesomeIcon
