@@ -425,7 +425,6 @@ const Home: NextPage = () => {
             <form
               className="kwes-form md:w-1/2 space-y-8 py-10 md:py-0"
               action="https://kwesforms.com/api/foreign/forms/VYUaY10qgL1m56DMgych"
-              kw-cloak
             >
               <div className="flex flex-col gap-y-2">
                 <label className="text-lg font-light" htmlFor="name">

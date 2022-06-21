@@ -29,10 +29,6 @@ body {
   color: lightsalmon;
 }
 
-[kw-cloak] {
-  display: none;
-}
-
 textarea {
   resize: none;
 }
