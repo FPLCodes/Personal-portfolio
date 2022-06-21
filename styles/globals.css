@@ -12,3 +12,15 @@ body {
   overflow-x: hidden;
   height: auto !important;
 }
+
+.line:hover > .line-bg {
+  width: 100%;
+}
+
+.line:hover > .github-text {
+  color: darkgray;
+}
+
+.line:hover > .site-text {
+  color: lightsalmon;
+}

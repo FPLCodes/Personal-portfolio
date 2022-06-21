@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             </h1>
           </div>
           <h2 className="text-3xl xl:text-4xl max-w-xl">
-            Full-stack web/app developer
+            Full-stack developer
           </h2>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
@@ -102,20 +102,26 @@ const Home: NextPage = () => {
                   around the world.
                 </p>
                 <div className="flex justify-around">
-                  <a
-                    href="https://github.com/FPLCodes/SocialLite"
-                    target="_blank"
-                    className="font-bold"
-                  >
-                    GITHUB
-                  </a>
-                  <a
-                    href="https://social-lite-app.herokuapp.com/"
-                    target="_blank"
-                    className="text-orange-500 font-bold"
-                  >
-                    LIVE SITE
-                  </a>
+                  <div className="line">
+                    <a
+                      href="https://github.com/FPLCodes/SocialLite"
+                      target="_blank"
+                      className="font-bold transition-all github-text"
+                    >
+                      GITHUB
+                    </a>
+                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                  </div>
+                  <div className="line">
+                    <a
+                      href="https://social-lite-app.herokuapp.com/"
+                      target="_blank"
+                      className="text-orange-500 font-bold transition-all site-text"
+                    >
+                      LIVE SITE
+                    </a>
+                    <div className="bg-orange-500 w-0 h-1 transition-all line-bg"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -152,20 +158,26 @@ const Home: NextPage = () => {
                   someone else or with a bot.
                 </p>
                 <div className="flex justify-around">
-                  <a
-                    href="https://github.com/FPLCodes/Tic-tac-toe"
-                    target="_blank"
-                    className="font-bold"
-                  >
-                    GITHUB
-                  </a>
-                  <a
-                    href="https://tictactoe-fp.netlify.app/"
-                    target="_blank"
-                    className="text-orange-500 font-bold"
-                  >
-                    LIVE SITE
-                  </a>
+                  <div className="line">
+                    <a
+                      href="https://github.com/FPLCodes/Tic-tac-toe"
+                      target="_blank"
+                      className="font-bold transition-all github-text"
+                    >
+                      GITHUB
+                    </a>
+                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                  </div>
+                  <div className="line">
+                    <a
+                      href="https://tictactoe-fp.netlify.app/"
+                      target="_blank"
+                      className="text-orange-500 font-bold transition-all site-text"
+                    >
+                      LIVE SITE
+                    </a>
+                    <div className="bg-orange-500 w-0 h-1 transition-all line-bg"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,14 +215,17 @@ const Home: NextPage = () => {
                 <p className="mb-4 text-lg font-light">
                   An anime (episode release) countdown bot for discord.
                 </p>
-                <div className="flex justify-center">
-                  <a
-                    href="https://github.com/FPLCodes/Anime-Countdown-Bot"
-                    target="_blank"
-                    className="font-bold"
-                  >
-                    GITHUB
-                  </a>
+                <div className="flex justify-around">
+                  <div className="line">
+                    <a
+                      href="https://github.com/FPLCodes/Anime-Countdown-Bot"
+                      target="_blank"
+                      className="font-bold transition-all github-text"
+                    >
+                      GITHUB
+                    </a>
+                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,20 +265,26 @@ const Home: NextPage = () => {
                   United States from 1947-2015.
                 </p>
                 <div className="flex justify-around">
-                  <a
-                    href="https://github.com/FPLCodes/US-GPD"
-                    target="_blank"
-                    className="font-bold"
-                  >
-                    GITHUB
-                  </a>
-                  <a
-                    href="https://us-gdp.netlify.app/"
-                    target="_blank"
-                    className="text-orange-500 font-bold"
-                  >
-                    LIVE SITE
-                  </a>
+                  <div className="line">
+                    <a
+                      href="https://github.com/FPLCodes/US-GPD"
+                      target="_blank"
+                      className="font-bold transition-all github-text"
+                    >
+                      GITHUB
+                    </a>
+                    <div className="bg-gray-800 w-0 h-1 transition-all line-bg"></div>
+                  </div>
+                  <div className="line">
+                    <a
+                      href="https://us-gdp.netlify.app/"
+                      target="_blank"
+                      className="text-orange-500 font-bold transition-all site-text"
+                    >
+                      LIVE SITE
+                    </a>
+                    <div className="bg-orange-500 w-0 h-1 transition-all line-bg"></div>
+                  </div>
                 </div>
               </div>
             </div>
