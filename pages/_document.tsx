@@ -11,6 +11,15 @@ export default function Document() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <meta
+          name="keywords"
+          content="Next, NextJS, React, JavaScript, Personal site, Sahab Ul Ferdous, Portfolio"
+        ></meta>
+        <meta
+          name="description"
+          content="Personal portfolio website of Sahab Ul Ferdous"
+        ></meta>
+        <meta name="author" content="Sahab Ul Ferdous"></meta>
       </Head>
       <body>
         <Main />
