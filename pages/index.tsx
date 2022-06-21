@@ -44,16 +44,18 @@ const Home: NextPage = () => {
       />
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 2xl:px-52 text-left">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-14 md:px-20 xl:px-40 2xl:px-52 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
           <div>
-            <h1 className="text-5xl xl:text-6xl max-w-xl">Hello, 👋 I'm</h1>
-            <h1 className="text-5xl xl:text-6xl max-w-xl font-bold">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl">
+              Hello, 👋 I'm
+            </h1>
+            <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl font-bold">
               Sahab Ul Ferdous
             </h1>
           </div>
-          <h2 className="text-3xl xl:text-4xl max-w-xl">
-            Full-stack developer
+          <h2 className="text-2xl md:text-3xl xl:text-4xl max-w-xl">
+            18 year old full-stack developer
           </h2>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
@@ -74,7 +76,7 @@ const Home: NextPage = () => {
           >
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
-              <div className="w-full flex flex-col gap-y-3">
+              <div className="w-full flex flex-col row-2 gap-y-6">
                 <Image
                   src={SocialLite}
                   alt="Screenshot of SocialLite"
@@ -82,27 +84,7 @@ const Home: NextPage = () => {
                     "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    JavaScript
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    VueJS
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    Firebase
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    MongoDB
-                  </p>
-                </div>
-              </div>
-              <div className="w-full flex flex-col gap-y-2 justify-between">
-                <p className="mb-4 text-lg font-light">
-                  An online messaging platform where you can message other users
-                  around the world.
-                </p>
-                <div className="flex justify-around">
+                <div className="flex justify-between px-4">
                   <div className="line">
                     <a
                       href="https://github.com/FPLCodes/SocialLite"
@@ -125,6 +107,28 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
+              <div className="w-full flex flex-col gap-y-2">
+                <p className="mb-4 text-lg font-light">
+                  An online messaging platform where you can message other users
+                  around the world.
+                </p>
+                <div>
+                  <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      JavaScript
+                    </p>
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      VueJS
+                    </p>
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      Firebase
+                    </p>
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      MongoDB
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -136,7 +140,7 @@ const Home: NextPage = () => {
           >
             <h1 className="w-full text-3xl">Tic-tac-toe</h1>
             <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
-              <div className="w-full flex flex-col gap-y-3">
+              <div className="w-full flex flex-col gap-y-6">
                 <Image
                   src={TicTacToe}
                   alt="Screenshot of tic-tac-toe"
@@ -144,21 +148,7 @@ const Home: NextPage = () => {
                     "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    JavaScript
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    React
-                  </p>
-                </div>
-              </div>
-              <div className="w-full flex flex-col justify-between">
-                <p className="mb-4 text-lg font-light">
-                  A simple web app game where you can play tic-tac-toe with
-                  someone else or with a bot.
-                </p>
-                <div className="flex justify-around">
+                <div className="flex justify-between px-4">
                   <div className="line">
                     <a
                       href="https://github.com/FPLCodes/Tic-tac-toe"
@@ -181,6 +171,20 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
+              <div className="w-full flex flex-col">
+                <p className="mb-4 text-lg font-light">
+                  A simple web app game where you can play tic-tac-toe with
+                  someone else or with a bot.
+                </p>
+                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
+                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    JavaScript
+                  </p>
+                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    React
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -192,7 +196,7 @@ const Home: NextPage = () => {
           >
             <h1 className="w-full text-3xl">AniCountdown bot</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
-              <div className="w-full flex flex-col gap-y-3">
+              <div className="w-full flex flex-col row-2 gap-y-6">
                 <Image
                   src={AniCountdown}
                   alt="Screenshot of AniCountdown bot"
@@ -200,23 +204,7 @@ const Home: NextPage = () => {
                     "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
-                <div className="flex flex-wrap gap-x-3 gap-y-3 text-xs">
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    JavaScript
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    Discord.js
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    Puppeteer
-                  </p>
-                </div>
-              </div>
-              <div className="w-full flex flex-col justify-between">
-                <p className="mb-4 text-lg font-light">
-                  An anime (episode release) countdown bot for discord.
-                </p>
-                <div className="flex justify-around">
+                <div className="flex justify-center">
                   <div className="line">
                     <a
                       href="https://github.com/FPLCodes/Anime-Countdown-Bot"
@@ -226,6 +214,24 @@ const Home: NextPage = () => {
                       GITHUB
                     </a>
                     <div className="bg-gray-800 w-0 transition-all line-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex flex-col gap-y-2">
+                <p className="mb-4 text-lg font-light">
+                  An anime (episode release) countdown bot for discord.
+                </p>
+                <div>
+                  <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      JavaScript
+                    </p>
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      Discord.js
+                    </p>
+                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                      Puppeteer
+                    </p>
                   </div>
                 </div>
               </div>
@@ -240,7 +246,7 @@ const Home: NextPage = () => {
           >
             <h1 className="w-full text-3xl">US-GDP Data Visualisation</h1>
             <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
-              <div className="w-full flex flex-col gap-y-3">
+              <div className="w-full flex flex-col gap-y-6">
                 <Image
                   src={US_GDP}
                   alt="Screenshot of US-GDP Data Visualisation"
@@ -248,24 +254,7 @@ const Home: NextPage = () => {
                     "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
                   }
                 />
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    JavaScript
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    React
-                  </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
-                    D3
-                  </p>
-                </div>
-              </div>
-              <div className="w-full flex flex-col justify-between">
-                <p className="mb-4 text-lg font-light">
-                  An interactive bar chart web app representing the GPD of the
-                  United States from 1947-2015.
-                </p>
-                <div className="flex justify-around">
+                <div className="flex justify-between px-4">
                   <div className="line">
                     <a
                       href="https://github.com/FPLCodes/US-GPD"
@@ -286,6 +275,23 @@ const Home: NextPage = () => {
                     </a>
                     <div className="bg-orange-500 w-0 transition-all line-bg"></div>
                   </div>
+                </div>
+              </div>
+              <div className="w-full flex flex-col">
+                <p className="mb-4 text-lg font-light">
+                  An interactive bar chart web app representing the GPD of the
+                  United States from 1947-2015.
+                </p>
+                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
+                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    JavaScript
+                  </p>
+                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    React
+                  </p>
+                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    D3
+                  </p>
                 </div>
               </div>
             </div>
@@ -397,7 +403,7 @@ const Home: NextPage = () => {
           </h1>
 
           <div className="flex flex-col md:flex-row md:items-center">
-            <div className="space-y-8 w-full md:w-1/2">
+            <div className="space-y-8 w-full md:w-1/2 font-light">
               <div className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md">
                 <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 22 }} />
                 <p>sahabferdous1@gmail</p>
