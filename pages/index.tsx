@@ -39,8 +39,7 @@ const Home: NextPage = () => {
             </h1>
           </div>
           <h2 className="text-3xl xl:text-4xl max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Full-stack web/app developer
           </h2>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
@@ -52,7 +51,7 @@ const Home: NextPage = () => {
           </div>
         </header>
 
-        <section id="projects" className="flex flex-col w-full gap-y-60 pt-40">
+        <section id="projects" className="flex flex-col w-full gap-y-72 pt-40">
           <div
             data-aos="fade-right"
             data-aos-duration="700"
@@ -262,7 +261,7 @@ const Home: NextPage = () => {
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-once="true"
-          className="mt-60 w-full"
+          className="mt-72 w-full"
         >
           <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
