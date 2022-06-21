@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         }}
       ></Script>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 text-left">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 xl:px-40 2xl:px-52 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
           <div>
             <h1 className="text-5xl xl:text-6xl max-w-xl">Hello, 👋 I'm</h1>
@@ -44,13 +44,13 @@ const Home: NextPage = () => {
             <a href="#projects">
               <FontAwesomeIcon
                 icon={faArrowDown}
-                style={{ fontSize: 30, color: "darkorange" }}
+                style={{ fontSize: 32, color: "darkorange" }}
               />
             </a>
           </div>
         </header>
 
-        <section id="projects" className="flex flex-col w-full gap-y-60 pt-14">
+        <section id="projects" className="flex flex-col w-full gap-y-60 pt-40">
           <div
             data-aos="fade-right"
             data-aos-duration="700"
@@ -263,39 +263,39 @@ const Home: NextPage = () => {
           <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
             <ul className="pt-3 flex flex-wrap gap-6 w-full text-center justify-center">
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img src="js.png" width={"75px"} />
                 JavaScript
               </li>
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img src="python.png" width={"75px"} /> Python
               </li>
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img src="c++.png" width={"75px"} /> C++
               </li>
 
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/354259/react.svg"
                   width="75px"
                 />
                 React
               </li>
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/354528/vue.svg"
                   width="75px"
                 />
                 Vue
               </li>
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/353735/firebase.svg"
                   width="75px"
                 />
                 Firebase
               </li>
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/373307/mongodb-opened.svg"
                   width="75px"
@@ -303,14 +303,14 @@ const Home: NextPage = () => {
                 MongoDB
               </li>
 
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/374171/vscode.svg"
                   width="75px"
                 />
                 VSCode
               </li>
-              <li>
+              <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/373623/git.svg"
                   width="75px"
@@ -328,10 +328,10 @@ const Home: NextPage = () => {
           className="mt-60 w-full"
         >
           <h1 className="text-4xl font-bold text-orange-500">Background</h1>
-          <div className="pt-16 font-light space-y-6">
+          <div className="pt-16 font-light space-y-6 lg:w-2/3">
             <p>
-              I am an <b>18 year old student</b> and I love coding and tech
-              related stuff 👨‍💻
+              I am an <b>18 year old student</b> that loves coding and pretty
+              much any tech related stuff 👨‍💻
             </p>
             <p>
               I've always enjoyed creating things and wanted to create my own
@@ -342,8 +342,8 @@ const Home: NextPage = () => {
               I also discovered a newfound love for web development.
             </p>
             <p>
-              <b>When I'm not coding</b> I'm probably gaming , watching anime,
-              or doing calisthenics 💪
+              <b>When I'm not coding</b> I'm probably gaming, watching anime, or
+              doing calisthenics 💪
             </p>
           </div>
         </section>
