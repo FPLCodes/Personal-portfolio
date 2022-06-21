@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
   const [option, setOption] = useState(0);
-  const [array, setArray] = useState([]);
+  const [array, setArray] = useState<any[]>([]);
 
   const changeOption = () => {
     if (option === 3) setOption(0);
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         : (word = "YouTuber");
     }
 
-    const arr = [];
+    const arr: string[] = [];
     let i = 0;
 
     const add = setInterval(() => {
@@ -84,16 +84,6 @@ const Home: NextPage = () => {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Script
-        id="aos"
-        src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        onLoad={() => {
-          AOS.init();
-        }}
-        onError={(e) => {
-          console.error("aos script failed to load", e);
-        }}
-      />
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-12 md:px-20 xl:px-40 2xl:px-52 text-left">
