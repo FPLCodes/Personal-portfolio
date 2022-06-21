@@ -13,6 +13,10 @@ body {
   height: auto !important;
 }
 
+textarea {
+  resize: none;
+}
+
 .line-bg {
   height: 2px;
 }
@@ -29,6 +33,13 @@ body {
   color: lightsalmon;
 }
 
-textarea {
-  resize: none;
+.type {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

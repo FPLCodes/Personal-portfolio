@@ -108,7 +108,7 @@ const Home: NextPage = () => {
           <div className="text-2xl md:text-3xl xl:text-4xl max-w-xl flex gap-x-2">
             <h2>18 year old</h2>
             <h2>{array.join("")}</h2>
-            <p className="animate-pulse">|</p>
+            <p className="type">|</p>
           </div>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
