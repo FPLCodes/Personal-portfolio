@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           </div>
         </header>
 
-        <section id="projects" className="flex flex-col w-full gap-y-60 pt-40">
+        <section id="projects" className="flex flex-col w-full gap-y-60 pt-14">
           <div
             data-aos="fade-right"
             data-aos-duration="700"
@@ -330,19 +330,20 @@ const Home: NextPage = () => {
           <h1 className="text-4xl font-bold text-orange-500">Background</h1>
           <div className="pt-16 font-light space-y-6">
             <p>
-              I am an <b>18 year old student</b> who loves coding 👨‍💻
+              I am an <b>18 year old student</b> and I love coding and tech
+              related stuff 👨‍💻
             </p>
             <p>
               I've always enjoyed creating things and wanted to create my own
               video game, however I had no idea where to start.{" "}
               <b>For over 2 years</b> I used my free time to learn programming
               languages and technologies, as well as algorithms and data
-              structures through YouTube and online courses. I also found a new
-              love for web development.
+              structures through YouTube and online courses. During this period
+              I also discovered a newfound love for web development.
             </p>
             <p>
               <b>When I'm not coding</b> I'm probably gaming , watching anime,
-              or doing calisthenics.
+              or doing calisthenics 💪
             </p>
           </div>
         </section>
