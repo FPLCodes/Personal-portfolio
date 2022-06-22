@@ -154,8 +154,9 @@ const Home: NextPage = () => {
               </div>
               <div className="w-full flex flex-col gap-y-2">
                 <p className="mb-4 text-lg font-light">
-                  An online messaging platform where you can message other users
-                  around the world.
+                  An online messaging platform created using VueJS. <br></br>
+                  User authentication is handled by Firebase and messages are
+                  sent and stored in Firestore.
                 </p>
                 <div>
                   <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
@@ -264,7 +265,10 @@ const Home: NextPage = () => {
               </div>
               <div className="w-full flex flex-col gap-y-2">
                 <p className="mb-4 text-lg font-light">
-                  An anime (episode release) countdown bot for discord.
+                  An anime (episode release) countdown bot for discord.{" "}
+                  <br></br> Puppeteer is used to retrieve data from an external
+                  source and discord.js allows us to communicate and display the
+                  data to user.
                 </p>
                 <div>
                   <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
