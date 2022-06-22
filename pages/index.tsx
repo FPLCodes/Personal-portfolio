@@ -2,6 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
+import { useEffect, useState } from "react";
+
+import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SocialLite from "../public/SocialLite.png";
@@ -9,10 +13,6 @@ import TicTacToe from "../public/tic-tac-toe.png";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
 import Cplusplus from "../public/cplusplus.png";
-
-import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
   const [option, setOption] = useState(0);
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
     <div className="flex min-h-screen flex-col items-center justify-center text-zinc-700">
       <Head>
         <title>Sahab Ul Ferdous</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/SF.ico" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
