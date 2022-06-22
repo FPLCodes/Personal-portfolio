@@ -40,7 +40,7 @@ const Home: NextPage = () => {
     let word = "";
     {
       option === 0
-        ? (word = "full stack developer")
+        ? (word = "Full stack developer")
         : option === 1
         ? (word = "student")
         : option === 2
@@ -67,7 +67,6 @@ const Home: NextPage = () => {
           }, 50);
         }, 2000);
       }
-      //console.log(array.join(""));
     }, 50);
 
     return () => {
@@ -159,17 +158,17 @@ const Home: NextPage = () => {
                   sent and stored in Firestore.
                 </p>
                 <div>
-                  <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                  <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs cursor-default">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       JavaScript
                     </p>
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       VueJS
                     </p>
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       Firebase
                     </p>
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       MongoDB
                     </p>
                   </div>
@@ -222,11 +221,11 @@ const Home: NextPage = () => {
                   A simple web app game where you can play tic-tac-toe with
                   someone else or with a bot.
                 </p>
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs cursor-default">
+                  <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                     JavaScript
                   </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                  <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                     React
                   </p>
                 </div>
@@ -271,14 +270,14 @@ const Home: NextPage = () => {
                   data to user.
                 </p>
                 <div>
-                  <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                  <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs cursor-default">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       JavaScript
                     </p>
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       Discord.js
                     </p>
-                    <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                    <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                       Puppeteer
                     </p>
                   </div>
@@ -331,14 +330,14 @@ const Home: NextPage = () => {
                   An interactive bar chart web app representing the GPD of the
                   United States from 1947-2015.
                 </p>
-                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs">
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs cursor-default">
+                  <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                     JavaScript
                   </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                  <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                     React
                   </p>
-                  <p className="border-2 py-1 px-2 rounded-lg border-orange-400 text-orange-500 font-bold">
+                  <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                     D3
                   </p>
                 </div>
