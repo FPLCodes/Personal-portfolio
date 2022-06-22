@@ -8,6 +8,7 @@ import SocialLite from "../public/SocialLite.png";
 import TicTacToe from "../public/tic-tac-toe.png";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
+import Cplusplus from "../public/c++.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
@@ -358,8 +359,9 @@ const Home: NextPage = () => {
               <li className="transition-all hover:scale-105">
                 <img src="python.png" width={"75px"} /> Python
               </li>
-              <li className="transition-all hover:scale-105">
-                <img src="c++.png" width={"75px"} /> C++
+              <li className="transition-all hover:scale-105 flex flex-col">
+                <Image src={Cplusplus} width="80" height="80" />
+                C++
               </li>
 
               <li className="transition-all hover:scale-105">
