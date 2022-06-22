@@ -395,6 +395,20 @@ const Home: NextPage = () => {
               </li>
               <li className="transition-all hover:scale-105">
                 <img
+                  src="https://www.svgrepo.com/show/354118/nodejs.svg"
+                  width="75px"
+                />
+                Node
+              </li>
+              <li className="transition-all hover:scale-105">
+                <img
+                  src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg"
+                  width="75px"
+                />
+                Tailwind
+              </li>
+              <li className="transition-all hover:scale-105">
+                <img
                   src="https://www.svgrepo.com/show/353735/firebase.svg"
                   width="75px"
                 />
