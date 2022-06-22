@@ -8,7 +8,7 @@ import SocialLite from "../public/SocialLite.png";
 import TicTacToe from "../public/tic-tac-toe.png";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
-import Cplusplus from "../public/c++.png";
+import Cplusplus from "../public/cplusplus.png";
 
 import { faArrowDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
