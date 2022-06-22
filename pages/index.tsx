@@ -86,7 +86,7 @@ const Home: NextPage = () => {
       </Head>
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-8 md:px-20 xl:px-40 2xl:px-52 text-left">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52 text-left">
         <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
           <div>
             <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl">
@@ -98,18 +98,20 @@ const Home: NextPage = () => {
           </div>
           <div className="text-2xl md:text-3xl xl:text-4xl max-w-xl flex gap-x-2">
             <h2>18 year old</h2>
-            <b>
-              {option === 0 ? (
-                <h2 className="text-green-500">{array.join("")}</h2>
-              ) : option === 1 ? (
-                <h2 className="text-blue-500">{array.join("")}</h2>
-              ) : option === 2 ? (
-                <h2 className="text-purple-500">{array.join("")}</h2>
-              ) : (
-                <h2 className="text-red-600">{array.join("")}</h2>
-              )}
-            </b>
-            <p className="type">|</p>
+            <div className="flex gap">
+              <b>
+                {option === 0 ? (
+                  <h2 className="text-green-500">{array.join("")}</h2>
+                ) : option === 1 ? (
+                  <h2 className="text-blue-500">{array.join("")}</h2>
+                ) : option === 2 ? (
+                  <h2 className="text-purple-500">{array.join("")}</h2>
+                ) : (
+                  <h2 className="text-red-600">{array.join("")}</h2>
+                )}
+              </b>
+              <p className="type">|</p>
+            </div>
           </div>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
             <a href="#projects">
@@ -360,7 +362,7 @@ const Home: NextPage = () => {
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-once="true"
-          className="mt-72 w-full"
+          className="mt-72 w-full px-4"
         >
           <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
@@ -428,7 +430,7 @@ const Home: NextPage = () => {
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-once="true"
-          className="mt-60 w-full"
+          className="mt-60 w-full px-4"
         >
           <h1 className="text-4xl font-bold text-orange-500">Background</h1>
           <div className="pt-16 font-light space-y-6 lg:w-2/3">
@@ -455,7 +457,7 @@ const Home: NextPage = () => {
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-once="true"
-          className="mt-48 w-full"
+          className="mt-48 w-full px-4"
         >
           <h1 className="text-4xl text-orange-500 font-bold mb-8">
             Get in touch
