@@ -98,7 +98,17 @@ const Home: NextPage = () => {
           </div>
           <div className="text-2xl md:text-3xl xl:text-4xl max-w-xl flex gap-x-2">
             <h2>18 year old</h2>
-            <h2>{array.join("")}</h2>
+            <b>
+              {option === 0 ? (
+                <h2 className="text-green-500">{array.join("")}</h2>
+              ) : option === 1 ? (
+                <h2 className="text-blue-500">{array.join("")}</h2>
+              ) : option === 2 ? (
+                <h2 className="text-purple-500">{array.join("")}</h2>
+              ) : (
+                <h2 className="text-red-600">{array.join("")}</h2>
+              )}
+            </b>
             <p className="type">|</p>
           </div>
           <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
