@@ -368,14 +368,16 @@ const Home: NextPage = () => {
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
             <ul className="pt-3 flex flex-wrap gap-6 w-full text-center justify-center">
               <li className="transition-all hover:scale-105">
-                <img src="js.png" width={"75px"} />
+                <img src="js.png" width={"75px"} alt="Javascript icon" />
                 JavaScript
               </li>
+
               <li className="transition-all hover:scale-105">
-                <img src="python.png" width={"75px"} /> Python
+                <img src="python.png" width={"75px"} alt="Python icon" /> Python
               </li>
+
               <li className="transition-all hover:scale-105 flex flex-col">
-                <Image src={Cplusplus} width="80" height="80" />
+                <Image src={Cplusplus} width="80" height="80" alt="C++ icon" />
                 C++
               </li>
 
@@ -383,41 +385,52 @@ const Home: NextPage = () => {
                 <img
                   src="https://www.svgrepo.com/show/354259/react.svg"
                   width="75px"
+                  alt="React icon"
                 />
                 React
               </li>
+
               <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/354528/vue.svg"
                   width="75px"
+                  alt="Vue icon"
                 />
                 Vue
               </li>
+
               <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/354118/nodejs.svg"
                   width="75px"
+                  alt="Node icon"
                 />
                 Node
               </li>
+
               <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg"
                   width="75px"
+                  alt="Tailwind icon"
                 />
                 Tailwind
               </li>
+
               <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/353735/firebase.svg"
                   width="75px"
+                  alt="Firebase icon"
                 />
                 Firebase
               </li>
+
               <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/373307/mongodb-opened.svg"
                   width="75px"
+                  alt="MongoDB icon"
                 />
                 MongoDB
               </li>
@@ -426,13 +439,16 @@ const Home: NextPage = () => {
                 <img
                   src="https://www.svgrepo.com/show/374171/vscode.svg"
                   width="75px"
+                  alt="VSCode icon"
                 />
                 VSCode
               </li>
+
               <li className="transition-all hover:scale-105">
                 <img
                   src="https://www.svgrepo.com/show/373623/git.svg"
                   width="75px"
+                  alt="Git icon"
                 />
                 Git
               </li>
