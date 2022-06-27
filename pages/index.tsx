@@ -383,6 +383,24 @@ const Home: NextPage = () => {
 
               <li className="transition-all hover:scale-105">
                 <img
+                  src="https://www.svgrepo.com/show/7866/html.svg"
+                  width="75px"
+                  alt="HTML icon"
+                />
+                HTML
+              </li>
+
+              <li className="transition-all hover:scale-105">
+                <img
+                  src="https://www.svgrepo.com/show/134149/css.svg"
+                  width="75px"
+                  alt="CSS icon"
+                />
+                CSS
+              </li>
+
+              <li className="transition-all hover:scale-105">
+                <img
                   src="https://www.svgrepo.com/show/354259/react.svg"
                   width="75px"
                   alt="React icon"
@@ -406,6 +424,15 @@ const Home: NextPage = () => {
                   alt="Node icon"
                 />
                 Node
+              </li>
+
+              <li className="transition-all hover:scale-105">
+                <img
+                  src="https://www.svgrepo.com/show/376367/express.svg"
+                  width="75px"
+                  alt="Express icon"
+                />
+                Express
               </li>
 
               <li className="transition-all hover:scale-105">
