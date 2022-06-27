@@ -508,11 +508,11 @@ const Home: NextPage = () => {
           data-aos-once="true"
           className="mt-60 w-full px-4"
         >
-          <h1 className="text-4xl font-bold text-orange-500">Background</h1>
+          <h1 className="text-4xl font-bold text-orange-500">About me</h1>
           <div className="pt-16 font-light space-y-6 lg:w-2/3">
             <p>
-              I am an <b>18 year old student</b> that loves coding and pretty
-              much any tech related stuff 👨‍💻
+              Hey there, I'm Sahab. I love coding and pretty much any tech
+              related stuff 👨‍💻
             </p>
             <p>
               I've always enjoyed creating things and wanted to create my own
