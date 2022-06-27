@@ -366,10 +366,12 @@ const Home: NextPage = () => {
         >
           <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
-            <ul className="pt-3 px-6 flex flex-col gap-12 w-full text-center">
+            <ul className="pt-3 sm:px-6 flex flex-col gap-14 w-full text-center">
               <div className="space-y-10">
-                <p className="text-left text-lg font-bold">Languages</p>
-                <div className="flex flex-wrap gap-6 px-8 items-center">
+                <p className="text-center sm:text-left text-lg font-bold">
+                  Languages
+                </p>
+                <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
                   <li className="transition-all hover:scale-105">
                     <img src="js.png" width={"75px"} alt="Javascript icon" />
                     JavaScript
@@ -383,8 +385,8 @@ const Home: NextPage = () => {
                   <li className="transition-all hover:scale-105 flex flex-col">
                     <Image
                       src={Cplusplus}
-                      width="80"
-                      height="80"
+                      width="75"
+                      height="75"
                       alt="C++ icon"
                     />
                     C++
@@ -393,8 +395,10 @@ const Home: NextPage = () => {
               </div>
 
               <div className="space-y-10">
-                <p className="text-left text-lg font-bold">Front-end</p>
-                <div className="flex flex-wrap gap-6 px-8">
+                <p className="text-center sm:text-left text-lg font-bold">
+                  Front-end
+                </p>
+                <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
                   <li className="transition-all hover:scale-105">
                     <img
                       src="https://www.svgrepo.com/show/7866/html.svg"
@@ -439,8 +443,10 @@ const Home: NextPage = () => {
               </div>
 
               <div className="space-y-10">
-                <p className="text-left text-lg font-bold">Back-end</p>
-                <div className="flex flex-wrap gap-6 px-8">
+                <p className="text-center sm:text-left text-lg font-bold">
+                  Back-end
+                </p>
+                <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
                   <li className="transition-all hover:scale-105">
                     <img
                       src="https://www.svgrepo.com/show/354118/nodejs.svg"
@@ -477,8 +483,10 @@ const Home: NextPage = () => {
               </div>
 
               <div className="space-y-10">
-                <p className="text-left text-lg font-bold">Tools</p>
-                <div className="flex flex-wrap gap-6 px-8">
+                <p className="text-center sm:text-left text-lg font-bold">
+                  Tools
+                </p>
+                <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
                   <li className="transition-all hover:scale-105">
                     <img
                       src="https://www.svgrepo.com/show/374171/vscode.svg"
