@@ -9,6 +9,7 @@ import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SocialLite from "../public/SocialLite.png";
+import SocialLiteDemo from "../public/SocialLite demo.gif";
 import TicTacToe from "../public/tic-tac-toe.png";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
@@ -134,7 +135,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
               <div className="w-full flex flex-col row-2 gap-y-6">
                 <Image
-                  src={SocialLite}
+                  src={SocialLiteDemo}
                   alt="Screenshot of SocialLite"
                   className={
                     "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
