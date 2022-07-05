@@ -359,16 +359,23 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-once="true"
-          className="mt-72 w-full px-4"
-        >
-          <h1 className="text-4xl font-bold text-orange-500">Skills</h1>
+        <section className="mt-48 w-full px-4">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-once="true"
+            className="text-4xl font-bold text-orange-500"
+          >
+            Skills
+          </h1>
           <div className="flex flex-col gap-y-6 w-full justify-around md:justify-around pt-16">
             <ul className="pt-3 sm:px-6 flex flex-col gap-14 w-full text-center">
-              <li className="space-y-10">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-once="true"
+                className="space-y-10"
+              >
                 <p className="text-center sm:text-left text-lg font-bold">
                   Languages
                 </p>
@@ -395,7 +402,12 @@ const Home: NextPage = () => {
                 </div>
               </li>
 
-              <li className="space-y-10">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-once="true"
+                className="space-y-10"
+              >
                 <p className="text-center sm:text-left text-lg font-bold">
                   Front-end
                 </p>
@@ -443,7 +455,12 @@ const Home: NextPage = () => {
                 </div>
               </li>
 
-              <li className="space-y-10">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-once="true"
+                className="space-y-10"
+              >
                 <p className="text-center sm:text-left text-lg font-bold">
                   Back-end
                 </p>
@@ -483,7 +500,12 @@ const Home: NextPage = () => {
                 </div>
               </li>
 
-              <li className="space-y-10">
+              <li
+                data-aos="fade-up"
+                data-aos-duration="700"
+                data-aos-once="true"
+                className="space-y-10"
+              >
                 <p className="text-center sm:text-left text-lg font-bold">
                   Tools
                 </p>
