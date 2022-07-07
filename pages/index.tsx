@@ -18,6 +18,10 @@ import Cplusplus from "../public/cplusplus.png";
 const Home: NextPage = () => {
   const [option, setOption] = useState(0);
   const [array, setArray] = useState<any[]>([]);
+  const [isHovering, setIsHovered] = useState(false);
+
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
 
   const changeOption = () => {
     if (option === 3) setOption(0);
@@ -134,13 +138,28 @@ const Home: NextPage = () => {
             <h1 className="w-full text-3xl">SocialLite</h1>
             <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
               <div className="w-full flex flex-col row-2 gap-y-6">
-                <Image
-                  src={SocialLiteDemo}
-                  alt="Screenshot of SocialLite"
-                  className={
-                    "self-center md:self-start md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
-                  }
-                />
+                {isHovering ? (
+                  <Image
+                    src={SocialLiteDemo}
+                    alt="Screenshot of SocialLite"
+                    className={
+                      "self-center md:self-start md:w-full rounded-sm transition-all drop-shadow-lg"
+                    }
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                  />
+                ) : (
+                  <Image
+                    src={SocialLite}
+                    alt="Screenshot of SocialLite"
+                    className={
+                      "self-center md:self-start md:w-full rounded-sm transition-all drop-shadow-lg"
+                    }
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                  />
+                )}
+
                 <div className="flex justify-between px-4">
                   <div className="line">
                     <a
