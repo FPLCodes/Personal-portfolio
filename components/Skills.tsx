@@ -84,6 +84,14 @@ function Skills() {
               </div>
               <div className="transition-all hover:scale-105">
                 <img
+                  src="https://www.svgrepo.com/show/374109/svelte.svg"
+                  width="75px"
+                  alt="Svelte icon"
+                />
+                Vue
+              </div>
+              <div className="transition-all hover:scale-105">
+                <img
                   src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg"
                   width="75px"
                   alt="Tailwind icon"
