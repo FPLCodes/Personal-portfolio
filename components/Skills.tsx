@@ -3,7 +3,7 @@ import Cplusplus from "../public/cplusplus.png";
 
 function Skills() {
   return (
-    <section className="mt-48 w-full px-4">
+    <section className="mt-48 w-full md:px-4">
       <h1
         data-aos="fade-up"
         data-aos-duration="700"
