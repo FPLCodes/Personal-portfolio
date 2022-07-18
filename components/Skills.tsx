@@ -88,7 +88,7 @@ function Skills() {
                   width="75px"
                   alt="Svelte icon"
                 />
-                Vue
+                Svelte
               </div>
               <div className="transition-all hover:scale-105">
                 <img

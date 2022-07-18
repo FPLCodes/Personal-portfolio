@@ -22,7 +22,7 @@ function About() {
         </p>
         <p>
           <b>When I'm not coding</b> I'm probably gaming, watching anime, or
-          doing calisthenics 💪
+          working out 💪
         </p>
         <p>
           Fun fact, I have a gaming{" "}
