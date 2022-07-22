@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import SocialLite from "../public/SocialLite.png";
 import SocialLiteDemo from "../public/SocialLite demo.gif";
-import TicTacToe from "../public/tic-tac-toe.png";
+import TrickyTacToe from "../public/tricky-tac-toe.png";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
 
@@ -102,11 +102,11 @@ function Projects() {
         data-aos-once="true"
         className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center md:self-end"
       >
-        <h1 className="w-full text-3xl">Tic-tac-toe</h1>
+        <h1 className="w-full text-3xl">Tricky-tac-toe</h1>
         <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
           <div className="w-full flex flex-col gap-y-6">
             <Image
-              src={TicTacToe}
+              src={TrickyTacToe}
               alt="Screenshot of tic-tac-toe"
               className={
                 "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
@@ -115,7 +115,7 @@ function Projects() {
             <div className="flex justify-between px-4">
               <div className="line">
                 <a
-                  href="https://github.com/FPLCodes/Tic-tac-toe"
+                  href="https://github.com/FPLCodes/Tricky-tac-toe"
                   target="_blank"
                   className="font-bold transition-all github-text"
                 >
@@ -125,7 +125,7 @@ function Projects() {
               </div>
               <div className="line">
                 <a
-                  href="https://tictactoe-fp.netlify.app/"
+                  href="https://tricky-tac-toe.netlify.app/"
                   target="_blank"
                   className="text-orange-500 font-bold transition-all site-text"
                 >
@@ -137,15 +137,18 @@ function Projects() {
           </div>
           <div className="w-full flex flex-col">
             <p className="mb-4 text-lg font-light">
-              A simple web app game where you can play tic-tac-toe with someone
-              else or with a bot.
+              Tic-tac-toe but with an AI implemented with minimax algorithm,
+              making it impossible to beat.
             </p>
             <div className="flex flex-wrap gap-x-3 gap-y-2 text-xs cursor-default">
               <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
                 JavaScript
               </p>
               <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
-                React
+                Svelte
+              </p>
+              <p className="border-2 py-1 px-2 rounded-lg transition-all hover:bg-orange-200 border-orange-400 text-orange-500 font-bold">
+                Algorithm
               </p>
             </div>
           </div>
