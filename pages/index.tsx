@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <Contact />
       </main>
 
-      <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t mt-32 bg-gray-100">
+      <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t md:mt-32 bg-gray-100">
         <h1 className="text-xs font-light">
           © 2022 Sahab Ul Ferdous. All rights reserved.
         </h1>

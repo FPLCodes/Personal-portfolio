@@ -37,9 +37,6 @@ function Projects() {
               <Image
                 src={SocialLiteDemo}
                 alt="Screenshot of SocialLite"
-                className={
-                  "self-center md:self-start md:w-full rounded-sm transition-all drop-shadow-lg"
-                }
                 onMouseEnter={() => onMouseEnter(1)}
                 onMouseLeave={() => onMouseLeave(1)}
               />
@@ -47,9 +44,6 @@ function Projects() {
               <Image
                 src={SocialLite}
                 alt="Short demo of SocialLite"
-                className={
-                  "self-center md:self-start md:w-full rounded-sm transition-all drop-shadow-lg"
-                }
                 onMouseEnter={() => onMouseEnter(1)}
                 onMouseLeave={() => onMouseLeave(1)}
               />
@@ -117,9 +111,6 @@ function Projects() {
               <Image
                 src={TrickyTacToeDemo}
                 alt="Screenshot of tic-tac-toe"
-                className={
-                  "self-center md:w-full rounded-sm transition-all drop-shadow-lg"
-                }
                 onMouseEnter={() => onMouseEnter(2)}
                 onMouseLeave={() => onMouseLeave(2)}
               />
@@ -127,9 +118,6 @@ function Projects() {
               <Image
                 src={TrickyTacToe}
                 alt="Screenshot of tic-tac-toe"
-                className={
-                  "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
-                }
                 onMouseEnter={() => onMouseEnter(2)}
                 onMouseLeave={() => onMouseLeave(2)}
               />
