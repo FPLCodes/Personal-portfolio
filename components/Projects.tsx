@@ -34,12 +34,14 @@ function Projects() {
         <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
           <div className="w-full flex flex-col row-2 gap-y-6">
             {isHovering1 ? (
-              <Image
-                src={SocialLiteDemo}
-                alt="Screenshot of SocialLite"
-                onMouseEnter={() => onMouseEnter(1)}
-                onMouseLeave={() => onMouseLeave(1)}
-              />
+              <div>
+                <Image
+                  src={SocialLiteDemo}
+                  alt="Screenshot of SocialLite"
+                  onMouseEnter={() => onMouseEnter(1)}
+                  onMouseLeave={() => onMouseLeave(1)}
+                />
+              </div>
             ) : (
               <Image
                 src={SocialLite}
@@ -108,12 +110,14 @@ function Projects() {
         <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
           <div className="w-full flex flex-col gap-y-6">
             {isHovering2 ? (
-              <Image
-                src={TrickyTacToeDemo}
-                alt="Screenshot of tic-tac-toe"
-                onMouseEnter={() => onMouseEnter(2)}
-                onMouseLeave={() => onMouseLeave(2)}
-              />
+              <div>
+                <Image
+                  src={TrickyTacToeDemo}
+                  alt="Screenshot of tic-tac-toe"
+                  onMouseEnter={() => onMouseEnter(2)}
+                  onMouseLeave={() => onMouseLeave(2)}
+                />
+              </div>
             ) : (
               <Image
                 src={TrickyTacToe}
