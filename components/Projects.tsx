@@ -3,16 +3,24 @@ import Image from "next/image";
 import SocialLite from "../public/SocialLite.png";
 import SocialLiteDemo from "../public/SocialLite demo.gif";
 import TrickyTacToe from "../public/tricky-tac-toe.png";
+import TrickyTacToeDemo from "../public/tricky-tac-toe demo.gif";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
 
 import { useState } from "react";
 
 function Projects() {
-  const [isHovering, setIsHovered] = useState(false);
+  const [isHovering1, setIsHovered1] = useState(false);
+  const [isHovering2, setIsHovered2] = useState(false);
 
-  const onMouseEnter = () => setIsHovered(true);
-  const onMouseLeave = () => setIsHovered(false);
+  const onMouseEnter = (num: number) => {
+    if (num === 1) setIsHovered1(true);
+    else setIsHovered2(true);
+  };
+  const onMouseLeave = (num: number) => {
+    if (num === 1) setIsHovered1(false);
+    else setIsHovered2(false);
+  };
 
   return (
     <section id="projects" className="flex flex-col w-full gap-y-72 pt-40">
@@ -25,15 +33,15 @@ function Projects() {
         <h1 className="w-full text-3xl">SocialLite</h1>
         <div className="flex flex-col gap-y-2 md:flex-row gap-x-4">
           <div className="w-full flex flex-col row-2 gap-y-6">
-            {isHovering ? (
+            {isHovering1 ? (
               <Image
                 src={SocialLiteDemo}
                 alt="Screenshot of SocialLite"
                 className={
                   "self-center md:self-start md:w-full rounded-sm transition-all drop-shadow-lg"
                 }
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
+                onMouseEnter={() => onMouseEnter(1)}
+                onMouseLeave={() => onMouseLeave(1)}
               />
             ) : (
               <Image
@@ -42,8 +50,8 @@ function Projects() {
                 className={
                   "self-center md:self-start md:w-full rounded-sm transition-all drop-shadow-lg"
                 }
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
+                onMouseEnter={() => onMouseEnter(1)}
+                onMouseLeave={() => onMouseLeave(1)}
               />
             )}
 
@@ -105,13 +113,28 @@ function Projects() {
         <h1 className="w-full text-3xl">Tricky-tac-toe</h1>
         <div className="flex flex-col md:flex-row gap-x-4 gap-y-2">
           <div className="w-full flex flex-col gap-y-6">
-            <Image
-              src={TrickyTacToe}
-              alt="Screenshot of tic-tac-toe"
-              className={
-                "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
-              }
-            />
+            {isHovering2 ? (
+              <Image
+                src={TrickyTacToeDemo}
+                alt="Screenshot of tic-tac-toe"
+                className={
+                  "self-center md:w-full rounded-sm transition-all drop-shadow-lg"
+                }
+                onMouseEnter={() => onMouseEnter(2)}
+                onMouseLeave={() => onMouseLeave(2)}
+              />
+            ) : (
+              <Image
+                src={TrickyTacToe}
+                alt="Screenshot of tic-tac-toe"
+                className={
+                  "self-center md:w-full rounded-sm transition-all hover:scale-95 drop-shadow-lg"
+                }
+                onMouseEnter={() => onMouseEnter(2)}
+                onMouseLeave={() => onMouseLeave(2)}
+              />
+            )}
+
             <div className="flex justify-between px-4">
               <div className="line">
                 <a
