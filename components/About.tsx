@@ -4,7 +4,7 @@ function About() {
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-once="true"
-      className="mt-60 w-full md:px-4"
+      className="mt-48 w-full md:px-4"
     >
       <h1 className="text-4xl font-bold text-orange-500">About me</h1>
       <div className="pt-16 font-light space-y-6 lg:w-2/3">

@@ -13,7 +13,7 @@ function Certificates() {
       >
         Certificates
       </h1>
-      <div className="flex flex-col md:grid grid-cols-2 lg:grid-cols-3 gap-12 pt-16">
+      <div className="flex flex-col md:grid grid-cols-2 xl:grid-cols-4 gap-12 pt-16">
         <a
           className="border-4 transition-all drop-shadow hover:drop-shadow-md hover:scale-105"
           href="https://www.freecodecamp.org/certification/fplcodes/responsive-web-design"
@@ -36,6 +36,14 @@ function Certificates() {
           target="_blank"
         >
           <img src="https://www.sololearn.com/certificates/course/en/16832789/1158/landscape/png" />
+        </a>
+
+        <a
+          className="border-4 transition-all drop-shadow hover:drop-shadow-md hover:scale-105"
+          href="https://www.sololearn.com/certificates/course/en/16832789/1024/landscape/png"
+          target="_blank"
+        >
+          <img src="https://www.sololearn.com/certificates/course/en/16832789/1024/landscape/png" />
         </a>
       </div>
     </section>
