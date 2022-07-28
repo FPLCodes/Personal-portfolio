@@ -14,17 +14,29 @@ function Certificates() {
         Certificates
       </h1>
       <div className="flex flex-col md:grid grid-cols-2 lg:grid-cols-3 gap-12 pt-16">
-        <div className="border-2">
+        <a
+          className="border-4 transition-all drop-shadow hover:drop-shadow-md hover:scale-105"
+          href="https://www.freecodecamp.org/certification/fplcodes/responsive-web-design"
+          target="_blank"
+        >
           <Image src={ffc1} />
-        </div>
+        </a>
 
-        <div className="border-2">
+        <a
+          className="border-4 transition-all drop-shadow hover:drop-shadow-md hover:scale-105"
+          href="https://www.freecodecamp.org/certification/fplcodes/javascript-algorithms-and-data-structures"
+          target="_blank"
+        >
           <Image src={ffc2} />
-        </div>
+        </a>
 
-        <div className="border-2">
+        <a
+          className="border-4 transition-all drop-shadow hover:drop-shadow-md hover:scale-105"
+          href="https://www.sololearn.com/certificates/course/en/16832789/1158/landscape/png"
+          target="_blank"
+        >
           <img src="https://www.sololearn.com/certificates/course/en/16832789/1158/landscape/png" />
-        </div>
+        </a>
       </div>
     </section>
   );
