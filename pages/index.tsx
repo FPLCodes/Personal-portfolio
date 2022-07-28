@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Intro from "../components/Intro";
+import Certificates from "../components/Certificates";
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,8 @@ const Home: NextPage = () => {
         <Projects />
 
         <Skills />
+
+        <Certificates />
 
         <About />
 
