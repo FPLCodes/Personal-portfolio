@@ -152,7 +152,7 @@ function Skills() {
             data-aos-once="true"
             className="space-y-10"
           >
-            <p className="text-center sm:text-left text-lg font-bold">Tools</p>
+            <p className="text-center sm:text-left text-lg font-bold">Others</p>
             <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
               <div className="transition-all hover:scale-105">
                 <img
@@ -170,6 +170,16 @@ function Skills() {
                   alt="Git icon"
                 />
                 Git
+              </div>
+
+              <div className="transition-all hover:scale-105">
+                <img
+                  src="https://www.svgrepo.com/show/303239/raspberry-pi-logo.svg"
+                  width="75px"
+                  alt="Raspberry pi icon"
+                  className="mx-auto"
+                />
+                Raspberry pi
               </div>
             </div>
           </li>
