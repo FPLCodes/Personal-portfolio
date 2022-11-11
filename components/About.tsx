@@ -9,15 +9,15 @@ function About() {
       <h1 className="text-4xl font-bold text-orange-500">About me</h1>
       <div className="pt-16 font-light space-y-6 lg:w-2/3">
         <p>
-          Hey there, I'm Sahab. I love coding and pretty much any tech related
+          Hey there, I'm Sahab. I love coding and pretty much any tech-related
           stuff 👨‍💻
         </p>
         <p>
-          I've always enjoyed creating things and wanted to create my own video
-          game, however I had no idea where to start. <b>For over 2 years</b> I
-          used my free time to learn programming languages and new technologies,
-          as well as algorithms and data structures through YouTube and online
-          courses. During this period I also discovered a newfound love for web
+          I've always enjoyed creating things and wanted to make my own video
+          game, however, I had no idea where to start. For over 2 years I used
+          my free time to learn programming languages and new technologies,
+          algorithms and data structures through YouTube and online courses.
+          During this period I also discovered a newfound love for web
           development.
         </p>
         <p>
