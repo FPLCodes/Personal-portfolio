@@ -34,6 +34,15 @@ function Skills() {
               </div>
 
               <div className="transition-all hover:scale-105 flex flex-col">
+                <img
+                  src="https://www.svgrepo.com/show/353924/java.svg"
+                  width="75px"
+                  alt="Java icon"
+                />
+                Java
+              </div>
+
+              <div className="transition-all hover:scale-105 flex flex-col">
                 <Image src={Cplusplus} width="75" height="75" alt="C++ icon" />
                 C++
               </div>
