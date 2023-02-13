@@ -12,6 +12,7 @@ import Certificates from "../components/Certificates";
 
 const Home: NextPage = () => {
   useEffect(() => {
+    // Only executes on the client side to avoid the "ReferenceError: document is not defined" error
     if (typeof window !== "undefined") {
       let sections = document.querySelectorAll("section");
       let sidebarLinks = document.querySelectorAll("li");
@@ -32,6 +33,17 @@ const Home: NextPage = () => {
           }
         }
       });
+
+      // Automatically smooth scroll to clicked component
+      for (let i = 0; i < sidebarLinks.length; i++) {
+        sidebarLinks[i].addEventListener("click", function () {
+          let sectionTop = sections[i].offsetTop - 100;
+          window.scrollTo({
+            top: sectionTop,
+            behavior: "smooth",
+          });
+        });
+      }
     }
   }, []);
 
@@ -51,27 +63,27 @@ const Home: NextPage = () => {
         <div className="fixed right-10 top-1/3 mt-10 h-screen">
           <nav>
             <ul className="flex flex-col text-center text-gray-500 font-light">
-              <li className="hover:text-indigo-400 transition-all duration-500 cursor-pointer">
+              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Projects
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-500 cursor-pointer">
+              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Skills
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-500 cursor-pointer">
+              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Certificates
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-500 cursor-pointer">
+              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 About
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-500 cursor-pointer">
+              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Contact
               </li>
             </ul>
