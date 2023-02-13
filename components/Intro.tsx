@@ -13,7 +13,6 @@ function Intro() {
   };
 
   useEffect(() => {
-    console.log(option);
     let delay = 3400;
     if (option === 0) delay = 4800;
     const textChange = setInterval(() => {
@@ -64,7 +63,7 @@ function Intro() {
   }, [option]);
 
   return (
-    <section className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
+    <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
       <div>
         <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl">
           Hello, 👋 I'm
@@ -98,7 +97,7 @@ function Intro() {
           />
         </a>
       </div>
-    </section>
+    </header>
   );
 }
 
