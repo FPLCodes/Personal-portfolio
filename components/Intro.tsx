@@ -64,7 +64,7 @@ function Intro() {
   }, [option]);
 
   return (
-    <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
+    <section className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
       <div>
         <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl">
           Hello, 👋 I'm
@@ -98,7 +98,7 @@ function Intro() {
           />
         </a>
       </div>
-    </header>
+    </section>
   );
 }
 
