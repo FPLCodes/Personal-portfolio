@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     // Only executes on the client side to avoid the "ReferenceError: document is not defined" error
     if (typeof window !== "undefined") {
       let sections = document.querySelectorAll("section");
-      let sidebarLinks = document.querySelectorAll("li");
+      let sidebarLinks = document.querySelectorAll(".sidebarLink");
 
       window.addEventListener("scroll", function () {
         // Current position of the user's scroll
@@ -23,8 +23,8 @@ const Home: NextPage = () => {
           document.documentElement.scrollTop || document.body.scrollTop;
 
         for (let i = 0; i < sections.length; i++) {
-          let sectionTop = sections[i].offsetTop - 400; // top position of the current section element, minus 200 pixels
-          let sectionBottom = sectionTop + sections[i].offsetHeight; // top position of the current section element, plus its height
+          let sectionTop = sections[i].offsetTop - 400; // top position of the current section element - 400 pixels
+          let sectionBottom = sectionTop + sections[i].offsetHeight; // top position of the current section element + its height
 
           if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
             sidebarLinks[i].classList.add("text-indigo-400");
@@ -60,30 +60,30 @@ const Home: NextPage = () => {
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52 text-left">
-        <div className="fixed right-10 top-1/3 mt-10 h-screen">
+        <div className="fixed right-10 top-1/3 mt-8 h-screen invisible xl:visible">
           <nav>
-            <ul className="flex flex-col text-center text-gray-500 font-light">
-              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
+            <ul className="flex flex-col text-center text-gray-500 font-light space-y-2">
+              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Projects
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
+              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Skills
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
+              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Certificates
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
+              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 About
               </li>
               <div>|</div>
 
-              <li className="hover:text-indigo-400 transition-all duration-200 cursor-pointer">
+              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
                 Contact
               </li>
             </ul>
