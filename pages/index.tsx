@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           document.documentElement.scrollTop || document.body.scrollTop;
 
         for (let i = 0; i < sections.length; i++) {
-          let sectionTop = sections[i].offsetTop - 150; // top position of the current section element - 150 pixels
+          let sectionTop = sections[i].offsetTop - 250; // top position of the current section element - 250 pixels
           let sectionBottom = sectionTop + sections[i].offsetHeight; // top position of the current section element + its height
 
           if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       // Automatically smooth scroll to clicked component
       for (let i = 0; i < sidebarLinks.length; i++) {
         sidebarLinks[i].addEventListener("click", function () {
-          let sectionTop = sections[i].offsetTop - 100;
+          let sectionTop = sections[i].offsetTop - 150;
           window.scrollTo({
             top: sectionTop,
             behavior: "smooth",
