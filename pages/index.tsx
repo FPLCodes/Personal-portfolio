@@ -27,9 +27,9 @@ const Home: NextPage = () => {
           let sectionBottom = sectionTop + sections[i].offsetHeight; // top position of the current section element + its height
 
           if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
-            sidebarLinks[i].classList.add("text-indigo-400");
+            sidebarLinks[i].classList.add("text-black");
           } else {
-            sidebarLinks[i].classList.remove("text-indigo-400");
+            sidebarLinks[i].classList.remove("text-black");
           }
         }
       });
@@ -60,14 +60,14 @@ const Home: NextPage = () => {
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52">
-        <nav className="fixed m-1/2 top-0 mt-4 z-50 invisible sm:visible">
-          <ul className="flex flex-row text-center text-gray-500 font-light space-x-3">
+        <nav className="fixed w-full top-0 py-4 z-50 invisible sm:visible bg-gray-200">
+          <ul className="flex flex-row justify-center text-center text-zinc-500 font-light space-x-3">
             <li
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="100"
-              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
             >
               Projects
             </li>
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="300"
-              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
             >
               Skills
             </li>
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="500"
-              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
             >
               Certificates
             </li>
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="700"
-              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
             >
               About
             </li>
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="900"
-              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
             >
               Contact
             </li>
