@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           document.documentElement.scrollTop || document.body.scrollTop;
 
         for (let i = 0; i < sections.length; i++) {
-          let sectionTop = sections[i].offsetTop - 400; // top position of the current section element - 400 pixels
+          let sectionTop = sections[i].offsetTop - 150; // top position of the current section element - 150 pixels
           let sectionBottom = sectionTop + sections[i].offsetHeight; // top position of the current section element + its height
 
           if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
@@ -59,11 +59,11 @@ const Home: NextPage = () => {
       </Head>
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52 text-left">
-        <nav className="fixed right-10 top-1/3 mt-6 h-screen invisible xl:visible">
-          <ul className="flex flex-col text-center text-gray-500 font-light space-y-3">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52">
+        <nav className="fixed m-1/2 top-0 mt-4 z-50 invisible sm:visible">
+          <ul className="flex flex-row text-center text-gray-500 font-light space-x-3">
             <li
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="100"
@@ -72,15 +72,15 @@ const Home: NextPage = () => {
               Projects
             </li>
             <div
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="200"
-              className="h-3 w-0.5 bg-gray-400 self-center"
+              className="h-0.5 w-3 bg-gray-400 self-center"
             />
 
             <li
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="300"
@@ -89,15 +89,15 @@ const Home: NextPage = () => {
               Skills
             </li>
             <div
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="400"
-              className="h-3 w-0.5 bg-gray-400 self-center"
+              className="h-0.5 w-3 bg-gray-400 self-center"
             />
 
             <li
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="500"
@@ -106,15 +106,15 @@ const Home: NextPage = () => {
               Certificates
             </li>
             <div
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="600"
-              className="h-3 w-0.5 bg-gray-400 self-center"
+              className="h-0.5 w-3 bg-gray-400 self-center"
             />
 
             <li
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="700"
@@ -123,15 +123,15 @@ const Home: NextPage = () => {
               About
             </li>
             <div
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="800"
-              className="h-3 w-0.5 bg-gray-400 self-center"
+              className="h-0.5 w-3 bg-gray-400 self-center"
             />
 
             <li
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="900"
