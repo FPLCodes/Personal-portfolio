@@ -64,15 +64,11 @@ function Intro() {
 
   return (
     <header className="flex flex-col gap-y-6 h-screen w-full justify-center text-middle pb-16">
-      <div>
-        <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl">
-          Hello, 👋 I'm
-        </h1>
-        <h1 className="text-4xl md:text-5xl xl:text-6xl max-w-xl font-bold">
-          Sahab Ul Ferdous
-        </h1>
+      <div className="text-4xl md:text-5xl xl:text-6xl text-center sm:text-left">
+        <h1>Hello, 👋 I'm</h1>
+        <h1 className="font-bold">Sahab Ul Ferdous</h1>
       </div>
-      <div className="text-2xl md:text-3xl xl:text-4xl max-w-xl flex gap-x-2">
+      <div className="text-2xl md:text-3xl xl:text-4xl flex gap-x-2 justify-center md:justify-start">
         <h2>19 year old</h2>
         <div className="flex gap">
           <b>
