@@ -60,35 +60,87 @@ const Home: NextPage = () => {
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52 text-left">
-        <div className="fixed right-10 top-1/3 mt-8 h-screen invisible xl:visible">
-          <nav>
-            <ul className="flex flex-col text-center text-gray-500 font-light space-y-2">
-              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
-                Projects
-              </li>
-              <div>|</div>
+        <nav className="fixed right-10 top-1/3 mt-6 h-screen invisible xl:visible">
+          <ul className="flex flex-col text-center text-gray-500 font-light space-y-3">
+            <li
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="100"
+              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+            >
+              Projects
+            </li>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="200"
+              className="h-3 w-0.5 bg-gray-400 self-center"
+            />
 
-              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
-                Skills
-              </li>
-              <div>|</div>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="300"
+              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+            >
+              Skills
+            </li>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="400"
+              className="h-3 w-0.5 bg-gray-400 self-center"
+            />
 
-              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
-                Certificates
-              </li>
-              <div>|</div>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="500"
+              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+            >
+              Certificates
+            </li>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="600"
+              className="h-3 w-0.5 bg-gray-400 self-center"
+            />
 
-              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
-                About
-              </li>
-              <div>|</div>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="700"
+              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+            >
+              About
+            </li>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="800"
+              className="h-3 w-0.5 bg-gray-400 self-center"
+            />
 
-              <li className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer">
-                Contact
-              </li>
-            </ul>
-          </nav>
-        </div>
+            <li
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-delay="900"
+              className="sidebarLink hover:text-indigo-400 transition-all duration-200 cursor-pointer"
+            >
+              Contact
+            </li>
+          </ul>
+        </nav>
 
         <Intro />
 
