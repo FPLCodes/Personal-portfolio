@@ -13,6 +13,19 @@ body {
   height: auto !important;
 }
 
+body::-webkit-scrollbar {
+  width: 0.3em;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6d6d6d;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #919191;
+}
+
 textarea {
   resize: none;
 }
