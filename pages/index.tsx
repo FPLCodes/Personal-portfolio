@@ -3,13 +3,14 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import Script from "next/script";
 
+import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Certificates from "../components/Certificates";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -93,11 +94,7 @@ const Home: NextPage = () => {
         <Contact />
       </main>
 
-      <footer className="flex gap-x-4 h-14 w-full items-center justify-center border-t md:mt-32 bg-gray-100">
-        <h1 className="text-xs font-light">
-          © 2023 Sahab Ul Ferdous. All rights reserved.
-        </h1>
-      </footer>
+      <Footer />
     </div>
   );
 };
