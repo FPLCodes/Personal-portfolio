@@ -20,8 +20,8 @@ const Home: NextPage = () => {
       let sections = document.querySelectorAll("section");
       let sidebarLinks = document.querySelectorAll(".sidebarLink");
 
-      let height = document.documentElement.scrollHeight - screen.height;
       let progressValue = 0;
+      const totalHeight = document.documentElement.scrollHeight - screen.height;
 
       const progressBar = document.querySelector(
         ".progress-bar"
@@ -45,9 +45,7 @@ const Home: NextPage = () => {
           }
         }
 
-        // Dynamically set the width of the progress bar
-        progressBar.style.width = `${(progressValue / height) * 100}%`;
-        console.log(scrollPos);
+        progressBar.style.width = `${(progressValue / totalHeight) * 100}%`; // Dynamically set the width of the progress bar
       });
 
       // Automatically smooth scroll to clicked component
@@ -64,7 +62,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className="page flex min-h-screen flex-col items-center justify-center text-zinc-700">
+    <div className="flex min-h-screen flex-col items-center justify-center text-zinc-700">
       <Head>
         <title>Sahab Ul Ferdous</title>
         <link rel="icon" href="/SF.ico" />
