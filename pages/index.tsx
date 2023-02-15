@@ -73,8 +73,10 @@ const Home: NextPage = () => {
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52">
-        <nav className="fixed w-full top-0 py-4 z-50 invisible sm:visible bg-gray-200">
-          <ul className="flex flex-row justify-center text-center text-zinc-500 font-light space-x-3">
+        <nav className="fixed w-full top-0 h-10 z-50 invisible sm:visible text-zinc-600 font-light text-center">
+          <div className="absolute h-full w-full blur-sm bg-gray-200"></div>
+          <div className="absolute h-full w-full backdrop-blur-md"></div>
+          <ul className="flex flex-row justify-center h-full items-center text-sm space-x-4">
             <li
               data-aos="fade-right"
               data-aos-duration="500"
@@ -89,7 +91,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="200"
-              className="h-0.5 w-3 bg-gray-400 self-center"
+              className="h-0.5 w-2 bg-gray-400 self-center"
             />
 
             <li
@@ -106,7 +108,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="400"
-              className="h-0.5 w-3 bg-gray-400 self-center"
+              className="h-0.5 w-2 bg-gray-400 self-center"
             />
 
             <li
@@ -123,7 +125,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="600"
-              className="h-0.5 w-3 bg-gray-400 self-center"
+              className="h-0.5 w-2 bg-gray-400 self-center"
             />
 
             <li
@@ -140,7 +142,7 @@ const Home: NextPage = () => {
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="800"
-              className="h-0.5 w-3 bg-gray-400 self-center"
+              className="h-0.5 w-2 bg-gray-400 self-center"
             />
 
             <li
