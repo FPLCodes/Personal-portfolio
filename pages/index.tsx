@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         let scrollPos =
           document.documentElement.scrollTop || document.body.scrollTop;
 
-        progressValue = scrollPos;
+        progressValue = scrollPos; // Progress bar at the bottom changes with the position of the users scroll
 
         for (let i = 0; i < sections.length; i++) {
           let sectionTop = sections[i].offsetTop - 250; // top position of the current section element - 250 pixels
@@ -76,83 +76,65 @@ const Home: NextPage = () => {
         <nav className="fixed w-full top-0 h-10 z-50 invisible sm:visible text-zinc-600 font-light text-center">
           <div className="absolute h-full w-full blur-sm bg-gray-200"></div>
           <div className="absolute h-full w-full backdrop-blur-md"></div>
-          <ul className="flex flex-row justify-center h-full items-center text-sm space-x-4">
+          <ul className="flex flex-row justify-center h-full items-center text-sm space-x-12">
             <li
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="100"
-              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
+              className="sidebarLink cursor-pointer"
             >
-              Projects
+              <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
+                Projects
+              </p>
             </li>
-            <div
+
+            <li
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="200"
-              className="h-0.5 w-2 bg-gray-400 self-center"
-            />
+              className="sidebarLink cursor-pointer"
+            >
+              <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
+                Skills
+              </p>
+            </li>
 
             <li
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="300"
-              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
+              className="sidebarLink cursor-pointer"
             >
-              Skills
+              <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
+                Certificates
+              </p>
             </li>
-            <div
+
+            <li
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="400"
-              className="h-0.5 w-2 bg-gray-400 self-center"
-            />
+              className="sidebarLink cursor-pointer"
+            >
+              <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
+                About
+              </p>
+            </li>
 
             <li
               data-aos="fade-right"
               data-aos-duration="500"
               data-aos-once="true"
               data-aos-delay="500"
-              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
+              className="sidebarLink cursor-pointer"
             >
-              Certificates
-            </li>
-            <div
-              data-aos="fade-right"
-              data-aos-duration="500"
-              data-aos-once="true"
-              data-aos-delay="600"
-              className="h-0.5 w-2 bg-gray-400 self-center"
-            />
-
-            <li
-              data-aos="fade-right"
-              data-aos-duration="500"
-              data-aos-once="true"
-              data-aos-delay="700"
-              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
-            >
-              About
-            </li>
-            <div
-              data-aos="fade-right"
-              data-aos-duration="500"
-              data-aos-once="true"
-              data-aos-delay="800"
-              className="h-0.5 w-2 bg-gray-400 self-center"
-            />
-
-            <li
-              data-aos="fade-right"
-              data-aos-duration="500"
-              data-aos-once="true"
-              data-aos-delay="900"
-              className="sidebarLink hover:text-black transition-all duration-200 cursor-pointer"
-            >
-              Contact
+              <p className="opacity-80 hover:opacity-100 ease-in-out transition-all duration-500">
+                Contact
+              </p>
             </li>
           </ul>
         </nav>
