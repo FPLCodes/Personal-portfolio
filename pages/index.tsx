@@ -4,6 +4,7 @@ import Head from "next/head";
 import Script from "next/script";
 
 import Navbar from "../components/Navbar";
+import ProgressBar from "../components/ProgressBar";
 import Intro from "../components/Intro";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
@@ -77,9 +78,7 @@ const Home: NextPage = () => {
       <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52">
         <Navbar />
 
-        <div className="fixed z-50 w-full h-1 bottom-0">
-          <div className="absolute progress-bar w-0 h-full bg-yellow-400"></div>
-        </div>
+        <ProgressBar />
 
         <Intro />
 
