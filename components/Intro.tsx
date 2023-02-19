@@ -97,7 +97,12 @@ function Intro() {
         </div>
       </div>
       <div className="absolute place-self-center bottom-32 transition-all hover:pb-2 animate-bounce">
-        <a href="#projects">
+        <a
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-once="true"
+          href="#projects"
+        >
           <FontAwesomeIcon
             icon={faArrowDown}
             style={{ fontSize: 32, color: "darkorange" }}
