@@ -78,7 +78,7 @@ function Intro() {
         data-aos-duration="700"
         data-aos-once="true"
         data-aos-delay="100"
-        className="text-2xl md:text-3xl xl:text-4xl flex gap-x-2 justify-center md:justify-start"
+        className="text-2xl md:text-3xl xl:text-4xl flex gap-x-2 justify-center sm:justify-start"
       >
         <h2>19 year old</h2>
         <div className="flex gap">
