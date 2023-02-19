@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Cplusplus from "../public/cplusplus.png";
+import Python from "../public/python.png";
 
 function Skills() {
   return (
@@ -26,11 +27,12 @@ function Skills() {
             <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
               <div className="transition-all hover:scale-105">
                 <img src="js.png" width={"75px"} alt="Javascript icon" />
-                JavaScript
+                <p>JavaScript</p>
               </div>
 
-              <div className="transition-all hover:scale-105">
-                <img src="python.png" width={"75px"} alt="Python icon" /> Python
+              <div className="transition-all hover:scale-105 flex flex-col">
+                <Image src={Python} width="75" height="75" alt="Python icon" />
+                <p>Python</p>
               </div>
 
               <div className="transition-all hover:scale-105 flex flex-col">
@@ -39,12 +41,12 @@ function Skills() {
                   width="75px"
                   alt="Java icon"
                 />
-                Java
+                <p>Java</p>
               </div>
 
               <div className="transition-all hover:scale-105 flex flex-col">
                 <Image src={Cplusplus} width="75" height="75" alt="C++ icon" />
-                C++
+                <p>C++</p>
               </div>
             </div>
           </li>
@@ -65,7 +67,7 @@ function Skills() {
                   width="75px"
                   alt="HTML icon"
                 />
-                HTML
+                <p>HTML</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -73,7 +75,7 @@ function Skills() {
                   width="75px"
                   alt="CSS icon"
                 />
-                CSS
+                <p>CSS</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -81,7 +83,7 @@ function Skills() {
                   width="75px"
                   alt="React icon"
                 />
-                React
+                <p>React</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -89,7 +91,7 @@ function Skills() {
                   width="75px"
                   alt="Vue icon"
                 />
-                Vue
+                <p>Vue</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -97,7 +99,7 @@ function Skills() {
                   width="75px"
                   alt="Svelte icon"
                 />
-                Svelte
+                <p>Svelte</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -105,7 +107,7 @@ function Skills() {
                   width="75px"
                   alt="Tailwind icon"
                 />
-                Tailwind
+                <p>Tailwind</p>
               </div>
             </div>
           </li>
@@ -126,7 +128,7 @@ function Skills() {
                   width="75px"
                   alt="Node icon"
                 />
-                Node
+                <p>Node</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -134,7 +136,7 @@ function Skills() {
                   width="75px"
                   alt="Express icon"
                 />
-                Express
+                <p>Express</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -142,7 +144,7 @@ function Skills() {
                   width="75px"
                   alt="Firebase icon"
                 />
-                Firebase
+                <p>Firebase</p>
               </div>
               <div className="transition-all hover:scale-105">
                 <img
@@ -150,7 +152,7 @@ function Skills() {
                   width="75px"
                   alt="MongoDB icon"
                 />
-                MongoDB
+                <p>MongoDB</p>
               </div>
             </div>
           </li>
@@ -169,7 +171,7 @@ function Skills() {
                   width="75px"
                   alt="VSCode icon"
                 />
-                VSCode
+                <p>VSCode</p>
               </div>
 
               <div className="transition-all hover:scale-105">
@@ -178,7 +180,7 @@ function Skills() {
                   width="75px"
                   alt="Git icon"
                 />
-                Git
+                <p>Git</p>
               </div>
 
               <div className="transition-all hover:scale-105">
@@ -188,7 +190,7 @@ function Skills() {
                   alt="Raspberry pi icon"
                   className="mx-auto"
                 />
-                Raspberry pi
+                <p>Raspberry pi</p>
               </div>
             </div>
           </li>
