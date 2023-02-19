@@ -39,9 +39,11 @@ const Home: NextPage = () => {
           let sectionBottom = sectionTop + sections[i].offsetHeight; // top position of the current section element + its height
 
           if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
+            sidebarLinks[i].classList.remove("text-gray-500");
             sidebarLinks[i].classList.add("text-black");
           } else {
             sidebarLinks[i].classList.remove("text-black");
+            sidebarLinks[i].classList.add("text-gray-500");
           }
         }
 

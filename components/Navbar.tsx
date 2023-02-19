@@ -9,11 +9,9 @@ function Navbar() {
           data-aos-duration="500"
           data-aos-once="true"
           data-aos-delay="100"
-          className="sidebarLink cursor-pointer"
+          className="sidebarLink cursor-pointer text-gray-500 hover:text-black"
         >
-          <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
-            Projects
-          </p>
+          <p className="ease-in-out transition-all duration-500">Projects</p>
         </li>
 
         <li
@@ -21,11 +19,9 @@ function Navbar() {
           data-aos-duration="500"
           data-aos-once="true"
           data-aos-delay="200"
-          className="sidebarLink cursor-pointer"
+          className="sidebarLink cursor-pointer text-gray-500 hover:text-black"
         >
-          <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
-            Skills
-          </p>
+          <p className="ease-in-out transition-all duration-500">Skills</p>
         </li>
 
         <li
@@ -33,9 +29,9 @@ function Navbar() {
           data-aos-duration="500"
           data-aos-once="true"
           data-aos-delay="300"
-          className="sidebarLink cursor-pointer"
+          className="sidebarLink cursor-pointer text-gray-500 hover:text-black"
         >
-          <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
+          <p className="ease-in-out transition-all duration-500">
             Certificates
           </p>
         </li>
@@ -45,11 +41,9 @@ function Navbar() {
           data-aos-duration="500"
           data-aos-once="true"
           data-aos-delay="400"
-          className="sidebarLink cursor-pointer"
+          className="sidebarLink cursor-pointer text-gray-500 hover:text-black"
         >
-          <p className="opacity-70 hover:opacity-100 ease-in-out transition-all duration-500">
-            About
-          </p>
+          <p className="ease-in-out transition-all duration-500">About</p>
         </li>
 
         <li
@@ -57,11 +51,9 @@ function Navbar() {
           data-aos-duration="500"
           data-aos-once="true"
           data-aos-delay="500"
-          className="sidebarLink cursor-pointer"
+          className="sidebarLink cursor-pointer text-gray-500 hover:text-black"
         >
-          <p className="opacity-80 hover:opacity-100 ease-in-out transition-all duration-500">
-            Contact
-          </p>
+          <p className="ease-in-out transition-all duration-500">Contact</p>
         </li>
       </ul>
     </nav>
