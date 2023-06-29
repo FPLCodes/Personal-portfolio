@@ -24,16 +24,6 @@ function About() {
           <b>When I'm not coding</b> I'm probably gaming, watching anime, or
           working out 💪
         </p>
-        <p>
-          Fun fact, I have a gaming{" "}
-          <a
-            className="text-red-500 hover:text-red-300"
-            href="https://www.youtube.com/c/FPLogistic"
-            target="_blank"
-          >
-            YouTube channel!
-          </a>
-        </p>
       </div>
     </section>
   );
