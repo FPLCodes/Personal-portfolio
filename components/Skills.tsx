@@ -89,7 +89,7 @@ function Skills() {
                 <img
                   src="https://www.svgrepo.com/show/354528/vue.svg"
                   width="75px"
-                  alt="Vue icon"
+                  alt="Vue.js icon"
                 />
                 <p>Vue</p>
               </div>
@@ -103,11 +103,19 @@ function Skills() {
               </div>
               <div className="transition-all hover:scale-105">
                 <img
+                  src="https://www.svgrepo.com/show/378440/nextjs-fill.svg"
+                  width="75px"
+                  alt="Next.JS icon"
+                />
+                <p>Next</p>
+              </div>
+              <div className="transition-all hover:scale-105">
+                <img
                   src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg"
                   width="75px"
                   alt="Tailwind icon"
                 />
-                <p>Tailwind</p>
+                <p>TailwindCSS</p>
               </div>
             </div>
           </li>
