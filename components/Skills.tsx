@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Cplusplus from "../public/cplusplus.png";
-import Python from "../public/python.png";
 
 function Skills() {
   return (
@@ -26,26 +24,42 @@ function Skills() {
             </p>
             <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
               <div className="transition-all hover:scale-105">
-                <img src="js.png" width={"75px"} alt="Javascript icon" />
+                <Image
+                  src="js.png"
+                  width={75}
+                  height={75}
+                  alt="Javascript icon"
+                />
                 <p>JavaScript</p>
               </div>
 
               <div className="transition-all hover:scale-105 flex flex-col">
-                <Image src={Python} width="75" height="75" alt="Python icon" />
+                <Image
+                  src="python.png"
+                  width={75}
+                  height={75}
+                  alt="Python icon"
+                />
                 <p>Python</p>
               </div>
 
               <div className="transition-all hover:scale-105 flex flex-col">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/353924/java.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Java icon"
                 />
                 <p>Java</p>
               </div>
 
               <div className="transition-all hover:scale-105 flex flex-col">
-                <Image src={Cplusplus} width="75" height="75" alt="C++ icon" />
+                <Image
+                  src="cplusplus.png"
+                  width={75}
+                  height={75}
+                  alt="C++ icon"
+                />
                 <p>C++</p>
               </div>
             </div>
@@ -62,57 +76,64 @@ function Skills() {
             </p>
             <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/7866/html.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="HTML icon"
                 />
                 <p>HTML</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/134149/css.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="CSS icon"
                 />
                 <p>CSS</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/354259/react.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="React icon"
                 />
                 <p>React</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/354528/vue.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Vue.js icon"
                 />
                 <p>Vue</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/374109/svelte.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Svelte icon"
                 />
                 <p>Svelte</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/378440/nextjs-fill.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Next.JS icon"
                 />
                 <p>Next</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/354431/tailwindcss-icon.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Tailwind icon"
                 />
                 <p>TailwindCSS</p>
@@ -131,33 +152,37 @@ function Skills() {
             </p>
             <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/354118/nodejs.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Node icon"
                 />
                 <p>Node</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/376367/express.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Express icon"
                 />
                 <p>Express</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/353735/firebase.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Firebase icon"
                 />
                 <p>Firebase</p>
               </div>
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/373307/mongodb-opened.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="MongoDB icon"
                 />
                 <p>MongoDB</p>
@@ -174,29 +199,31 @@ function Skills() {
             <p className="text-center sm:text-left text-lg font-bold">Others</p>
             <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/374171/vscode.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="VSCode icon"
                 />
                 <p>VSCode</p>
               </div>
 
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/373623/git.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Git icon"
                 />
                 <p>Git</p>
               </div>
 
               <div className="transition-all hover:scale-105">
-                <img
+                <Image
                   src="https://www.svgrepo.com/show/303239/raspberry-pi-logo.svg"
-                  width="75px"
+                  width={75}
+                  height={75}
                   alt="Raspberry pi icon"
-                  className="mx-auto"
                 />
                 <p>Raspberry pi</p>
               </div>
