@@ -46,7 +46,12 @@ function Certificates() {
           href="https://www.sololearn.com/certificates/course/en/16832789/1024/landscape/png"
           target="_blank"
         >
-          <img src="https://www.sololearn.com/certificates/course/en/16832789/1024/landscape/png" />
+          <Image
+            src="https://www.sololearn.com/certificates/course/en/16832789/1024/landscape/png"
+            width={1754}
+            height={1238}
+            alt="Sololarn JavaScript certificate"
+          />
         </a>
       </div>
     </section>
