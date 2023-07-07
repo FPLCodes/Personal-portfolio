@@ -4,6 +4,6 @@ module.exports = {
   images: {
     loader: "akamai",
     path: "",
-    domains: ["svgrepo.com"],
+    domains: ["svgrepo.com", "sololearn.com"],
   },
 };
