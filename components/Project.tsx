@@ -8,13 +8,12 @@ interface Props {
   site?: string;
   description: string;
   tags: Array<string>;
-  transition: string;
 }
 
 export default function Project(props: Props) {
   return (
     <div
-      data-aos={props.transition}
+      data-aos="fade-left"
       data-aos-duration="700"
       data-aos-once="true"
       className="flex flex-col flex-1 gap-y-2 w-5/6 lg:w-2/3 xl:1/2 self-center"
@@ -52,7 +51,7 @@ export default function Project(props: Props) {
         </div>
         <div className="w-full flex flex-col gap-y-2">
           <p
-            data-aos={props.transition}
+            data-aos="fade-left"
             data-aos-duration="500"
             data-aos-delay="100"
             data-aos-once="true"
@@ -64,7 +63,7 @@ export default function Project(props: Props) {
             <div className="flex flex-wrap gap-x-3 gap-y-3 text-sm cursor-default">
               {props.tags.map((tag, idx) => (
                 <p
-                  data-aos={props.transition}
+                  data-aos="fade-left"
                   data-aos-duration="500"
                   data-aos-delay={((idx + 1) * 100).toString()}
                   data-aos-once="true"

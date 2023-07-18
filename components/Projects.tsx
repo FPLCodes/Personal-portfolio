@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import SocialLiteDemo from "../public/SocialLite demo.gif";
 import TrickyTacToeDemo from "../public/tricky-tac-toe demo.gif";
 import AniCountdown from "../public/AniCountdown.png";
@@ -17,7 +15,6 @@ function Projects() {
         description="An online messaging platform created using VueJS. User authentication is handled by Firebase 
         and messages are sent and stored in Firestore."
         tags={["JavaScript", "Vue.js", "Firebase", "MongoDB"]}
-        transition="fade-right"
       />
 
       <Project
@@ -27,7 +24,6 @@ function Projects() {
         site="https://tricky-tac-toe.netlify.app/"
         description="Tic-tac-toe but with an AI implemented with minimax algorithm, making it impossible to beat."
         tags={["JavaScript", "Svelte", "Algorithm"]}
-        transition="fade-left"
       />
 
       <Project
@@ -39,7 +35,6 @@ function Projects() {
         Puppeteer is used to retrieve data from an external source and
         discord.js allows us to communicate and display the data to user."
         tags={["JavaScript", "Discord.js", "Puppeteer"]}
-        transition="fade-right"
       />
 
       <Project
@@ -50,7 +45,6 @@ function Projects() {
         description="An interactive bar chart web app representing the GPD of the
         United States from 1947-2015."
         tags={["JavaScript", "React.js", "D3"]}
-        transition="fade-left"
       />
     </section>
   );
