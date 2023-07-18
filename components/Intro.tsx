@@ -28,12 +28,12 @@ function Intro() {
     let word = "";
     {
       option === 0
-        ? (word = "Full stack developer")
+        ? (word = "Web developer")
         : option === 1
         ? (word = "student")
         : option === 2
         ? (word = "gamer")
-        : (word = "YouTuber");
+        : (word = "programmer");
     }
 
     const arr: string[] = [];
