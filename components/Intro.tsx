@@ -68,7 +68,7 @@ function Intro() {
         data-aos="fade-right"
         data-aos-duration="700"
         data-aos-once="true"
-        className="text-4xl md:text-5xl xl:text-6xl text-center sm:text-left"
+        className="text-5xl xl:text-6xl text-center sm:text-left"
       >
         <h1>Hello, 👋 I'm</h1>
         <h1 className="font-bold">Sahab Ul Ferdous</h1>
