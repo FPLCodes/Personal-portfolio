@@ -1,5 +1,9 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faDiscord,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Contact() {
@@ -19,10 +23,23 @@ function Contact() {
             <p>sahabferdous1@gmail</p>
           </div>
 
-          <div className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md">
+          <a
+            href="https://github.com/FPLCodes"
+            target="_blank"
+            className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md transition duration-300 hover:shadow hover:bg-zinc-200"
+          >
             <FontAwesomeIcon icon={faGithub} style={{ fontSize: 24 }} />
             <p>FPLCodes</p>
-          </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sahab-ul-ferdous/"
+            target="_blank"
+            className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md transition duration-300 hover:shadow hover:bg-zinc-200"
+          >
+            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 24 }} />
+            <p>Sahab Ul Ferdous</p>
+          </a>
 
           <div className="bg-zinc-100 flex gap-x-2 place-items-center p-4 rounded-md">
             <FontAwesomeIcon icon={faDiscord} style={{ fontSize: 20 }} />
