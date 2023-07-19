@@ -129,6 +129,7 @@ function Skills() {
         <ul className="pt-3 sm:px-6 flex flex-col gap-14 w-full text-center">
           {sections.map((section) => (
             <li
+              key={section.title}
               data-aos="fade-right"
               data-aos-duration="700"
               data-aos-once="true"

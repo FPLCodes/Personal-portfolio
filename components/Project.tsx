@@ -65,6 +65,7 @@ export default function Project(props: Props) {
             <div className="flex flex-wrap gap-x-3 gap-y-3 text-xs lg:text-sm lg:font-medium cursor-default">
               {props.tags.map((tag, idx) => (
                 <p
+                  key={idx}
                   data-aos="fade-left"
                   data-aos-duration="500"
                   data-aos-delay={((idx + 1) * 100).toString()}

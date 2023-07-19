@@ -21,6 +21,10 @@ function About() {
           development.
         </p>
         <p>
+          Currently I'm a second year Computer Science student at Monash
+          University Malaysia.
+        </p>
+        <p>
           <b>When I'm not coding</b> I'm probably gaming, watching anime, or
           working out 💪
         </p>
