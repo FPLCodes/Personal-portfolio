@@ -75,7 +75,7 @@ const Home: NextPage = () => {
       </Head>
       <Script id="kwes" src="https://kwesforms.com/v2/kwes-script.js" />
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-2 sm:px-10 md:px-20 xl:px-40 2xl:px-52 overflow-hidden">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-4 sm:px-10 md:px-20 xl:px-40 2xl:px-52 overflow-hidden">
         <Navbar />
 
         <ProgressBar />

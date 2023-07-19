@@ -7,7 +7,10 @@ import Project from "./Project";
 
 function Projects() {
   return (
-    <section id="projects" className="flex flex-col w-full gap-y-72 pt-40">
+    <section
+      id="projects"
+      className="flex flex-col w-full gap-y-72 mt-40 px-2 md:px-0"
+    >
       <Project
         title="SocialLite"
         image={SocialLiteDemo}
@@ -32,7 +35,7 @@ function Projects() {
         image={DiscrdClone}
         github="https://github.com/FPLCodes/Discord-Clone"
         site="https://discord-replica.vercel.app/"
-        description="Discord landing page clone created with Next.js, TailwindCSS, and HeadlessUI. A Project aimed at improving my front-end development skills."
+        description="Discord landing page clone created with Next.js, TailwindCSS, and HeadlessUI. Fully responsive and multi-page."
         tags={["TypeScript", "Next.js", "TailwindCSS", "HeadlessUI"]}
       />
 
