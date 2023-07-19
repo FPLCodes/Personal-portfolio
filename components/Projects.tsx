@@ -1,5 +1,6 @@
 import SocialLiteDemo from "../public/SocialLite demo.gif";
 import TrickyTacToeDemo from "../public/tricky-tac-toe demo.gif";
+import DiscrdClone from "../public/discord-clone.png";
 import AniCountdown from "../public/AniCountdown.png";
 import US_GDP from "../public/US-GDP.png";
 import Project from "./Project";
@@ -24,6 +25,15 @@ function Projects() {
         site="https://tricky-tac-toe.netlify.app/"
         description="Tic-tac-toe but with an AI implemented with minimax algorithm, making it impossible to beat."
         tags={["JavaScript", "Svelte", "Algorithm"]}
+      />
+
+      <Project
+        title="Discord Clone"
+        image={DiscrdClone}
+        github="https://github.com/FPLCodes/Discord-Clone"
+        site="https://discord-replica.vercel.app/"
+        description="Discord landing page clone created with Next.js, TailwindCSS, and HeadlessUI. A Project aimed at improving my front-end development skills."
+        tags={["TypeScript", "Next.js", "TailwindCSS", "HeadlessUI"]}
       />
 
       <Project
