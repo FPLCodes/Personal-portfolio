@@ -15,7 +15,6 @@ function Projects() {
         title="SocialLite"
         image={SocialLiteDemo}
         github="https://github.com/FPLCodes/SocialLite"
-        site="https://social-lite-app.herokuapp.com/"
         description="An online messaging platform created using VueJS. User authentication is handled by Firebase 
         and messages are sent and stored in Firestore."
         tags={["JavaScript", "Vue.js", "Firebase", "MongoDB"]}
@@ -43,7 +42,6 @@ function Projects() {
         title="AniCountdown bot"
         image={AniCountdown}
         github="https://github.com/FPLCodes/Anime-Countdown-Bot"
-        site="https://tricky-tac-toe.netlify.app/"
         description="An anime (episode release) countdown bot for discord.
         Puppeteer is used to retrieve data from an external source and
         discord.js allows us to communicate and display the data to user."

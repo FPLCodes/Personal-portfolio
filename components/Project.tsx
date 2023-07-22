@@ -16,7 +16,7 @@ export default function Project(props: Props) {
       data-aos="fade-left"
       data-aos-duration="700"
       data-aos-once="true"
-      className="flex flex-col flex-1 gap-y-2 max-w-7xl lg:max-w-5xl self-center"
+      className="flex just flex-col flex-1 gap-y-2 max-w-7xl lg:max-w-5xl self-center"
     >
       <h1 className="w-full text-3xl">{props.title}</h1>
       <div className="flex flex-col gap-y-2 md:flex-row gap-x-6">
@@ -28,7 +28,12 @@ export default function Project(props: Props) {
               alt="Short demo gif of SocialLite"
             />
           </div>
-          <div className="flex justify-between px-4">
+          <div
+            style={{
+              justifyContent: props.site ? "space-between" : "center",
+            }}
+            className="flex px-4"
+          >
             <div className="line">
               <a
                 href={props.github}
@@ -39,16 +44,21 @@ export default function Project(props: Props) {
               </a>
               <div className="bg-gray-800 w-0 transition-all line-bg"></div>
             </div>
-            <div className="line">
-              <a
-                href={props.site}
-                target="_blank"
-                className="text-orange-500 font-bold transition-all site-text"
-              >
-                LIVE SITE
-              </a>
-              <div className="bg-orange-500 w-0 transition-all line-bg"></div>
-            </div>
+
+            {props.site ? (
+              <div className="line">
+                <a
+                  href={props.site}
+                  target="_blank"
+                  className="text-orange-500 font-bold transition-all site-text"
+                >
+                  LIVE SITE
+                </a>
+                <div className="bg-orange-500 w-0 transition-all line-bg"></div>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
         <div className="w-full flex flex-col">
