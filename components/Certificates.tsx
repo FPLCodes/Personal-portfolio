@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ffc1 from "../public/fcc1.jpg";
 import ffc2 from "../public/fcc2.jpg";
+import sl1 from "../public/SoloLearn Intermediate Python Certificate.png";
 
 const certificates = [
   {
@@ -12,10 +13,8 @@ const certificates = [
     href: "https://www.freecodecamp.org/certification/fplcodes/javascript-algorithms-and-data-structures",
   },
   {
-    src: "https://www.sololearn.com/certificates/course/en/16832789/1158/landscape/png",
+    src: sl1,
     href: "https://www.sololearn.com/certificates/course/en/16832789/1158/landscape/png",
-    width: 1754,
-    height: 1238,
     alt: "Sololarn Intermediate Python certificate",
   },
   {
