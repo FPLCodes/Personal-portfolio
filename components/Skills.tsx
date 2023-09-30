@@ -10,6 +10,11 @@ const sections = [
         label: "JavaScript",
       },
       {
+        src: "https://www.svgrepo.com/show/354478/typescript-icon.svg",
+        alt: "TypeScript icon",
+        label: "TypeScript",
+      },
+      {
         src: "python.png",
         alt: "Python icon",
         label: "Python",
@@ -23,6 +28,11 @@ const sections = [
         src: "cplusplus.png",
         alt: "C++ icon",
         label: "C++",
+      },
+      {
+        src: "https://www.svgrepo.com/show/373660/haskell.svg",
+        alt: "Haskell icon",
+        label: "Haskell",
       },
     ],
   },
@@ -64,6 +74,11 @@ const sections = [
         src: "https://www.svgrepo.com/show/354431/tailwindcss-icon.svg",
         alt: "Tailwind icon",
         label: "TailwindCSS",
+      },
+      {
+        src: "https://www.svgrepo.com/show/508915/flask.svg",
+        alt: "Flask icon",
+        label: "Flask",
       },
     ],
   },
