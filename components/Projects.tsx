@@ -1,5 +1,5 @@
 import SocialLiteDemo from "../public/projects/SocialLite demo.gif";
-import TetrisTS from "../public/projects/TetrisTS.png";
+import TetrisTS from "../public/projects/tetrisTS.png";
 import TrickyTacToeDemo from "../public/projects/tricky-tac-toe demo.gif";
 import DiscrdClone from "../public/projects/discord-clone.png";
 import AniCountdown from "../public/projects/AniCountdown.png";
