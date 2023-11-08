@@ -1,8 +1,9 @@
-import SocialLiteDemo from "../public/SocialLite demo.gif";
-import TrickyTacToeDemo from "../public/tricky-tac-toe demo.gif";
-import DiscrdClone from "../public/discord-clone.png";
-import AniCountdown from "../public/AniCountdown.png";
-import US_GDP from "../public/US-GDP.png";
+import SocialLiteDemo from "../public/projects/SocialLite demo.gif";
+import TetrisTS from "../public/projects/TetrisTS.png";
+import TrickyTacToeDemo from "../public/projects/tricky-tac-toe demo.gif";
+import DiscrdClone from "../public/projects/discord-clone.png";
+import AniCountdown from "../public/projects/AniCountdown.png";
+import US_GDP from "../public/projects/US-GDP.png";
 import Project from "./Project";
 
 function Projects() {
@@ -15,9 +16,19 @@ function Projects() {
         title="SocialLite"
         image={SocialLiteDemo}
         github="https://github.com/FPLCodes/SocialLite"
-        description="An online messaging platform created using VueJS. User authentication is handled by Firebase 
-        and messages are sent and stored in Firestore."
+        description="Connect instantly with others using SocialLite, powered by VueJS for seamless interactivity. Enjoy secure login via Firebase 
+        and real-time chat with messages safeguarded in Firestore."
         tags={["JavaScript", "Vue.js", "Firebase", "MongoDB"]}
+      />
+
+      <Project
+        title="TetrisTS"
+        image={TetrisTS}
+        github="https://github.com/FPLCodes/TetrisTS"
+        site="https://tetris-ts.netlify.app/"
+        description="Reactive and robust rendition of the classic tetris game, employing FRP principles with TypeScript and RxJS for a clean, 
+        maintainable codebase and a dynamic user experience."
+        tags={["TypeScript", "HTML", "CSS", "RxJS", "FRP"]}
       />
 
       <Project
@@ -25,16 +36,18 @@ function Projects() {
         image={TrickyTacToeDemo}
         github="https://github.com/FPLCodes/Tricky-tac-toe"
         site="https://tricky-tac-toe.netlify.app/"
-        description="Tic-tac-toe but with an AI implemented with minimax algorithm, making it impossible to beat."
+        description="Engage with a classic game of Tic-tac-toe, now elevated with an unbeatable AI powered by the minimax algorithm. 
+        Perfect your strategies and test the limits of possibility."
         tags={["JavaScript", "Svelte", "Algorithm"]}
       />
 
       <Project
-        title="Discord Clone"
+        title="Discord Landing Page Clone"
         image={DiscrdClone}
         github="https://github.com/FPLCodes/Discord-Clone"
         site="https://discord-replica.vercel.app/"
-        description="Discord landing page clone created with Next.js, TailwindCSS, and HeadlessUI. Fully responsive and multi-page."
+        description="Experience a pixel-perfect Discord landing page clone crafted with Next.js, styled by TailwindCSS, 
+        and enhanced with HeadlessUI components. It's fully responsive and spans multiple pages for a comprehensive navigation experience."
         tags={["TypeScript", "Next.js", "TailwindCSS", "HeadlessUI"]}
       />
 
@@ -42,9 +55,8 @@ function Projects() {
         title="AniCountdown bot"
         image={AniCountdown}
         github="https://github.com/FPLCodes/Anime-Countdown-Bot"
-        description="An anime (episode release) countdown bot for discord.
-        Puppeteer is used to retrieve data from an external source and
-        discord.js allows us to communicate and display the data to user."
+        description="Stay ahead with an anime release countdown bot for Discord. Leveraging Puppeteer for live data retrieval and discord.js 
+        for dynamic display, never miss an episode drop again."
         tags={["JavaScript", "Discord.js", "Puppeteer"]}
       />
 
@@ -53,8 +65,8 @@ function Projects() {
         image={US_GDP}
         github="https://github.com/FPLCodes/US-GPD"
         site="https://us-gdp.netlify.app/"
-        description="An interactive bar chart web app representing the GPD of the
-        United States from 1947-2015."
+        description="Explore economic history with an interactive web app showcasing the GDP of the United States from 1947-2015 
+        through a dynamic bar chart."
         tags={["JavaScript", "React.js", "D3"]}
       />
     </section>
