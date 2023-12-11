@@ -14,15 +14,15 @@ function About() {
         </p>
         <p>
           I've always enjoyed creating things and wanted to make my own video
-          game, however, I had no idea where to start. For over 2 years I used
-          my free time to learn programming languages and new technologies,
-          algorithms and data structures through YouTube and online courses.
-          During this period I also discovered a newfound love for web
-          development.
+          game, however, I had no idea where to start. 2 years prior to joining
+          University, I used my free time to learn programming languages and new
+          technologies, algorithms and data structures through YouTube and
+          online courses. During this period I also discovered a newfound love
+          for web development.
         </p>
         <p>
           Currently I'm a second year Computer Science student at Monash
-          University Malaysia.
+          University Malaysia, specialising in Advanced Computer Science.
         </p>
         <p>
           <b>When I'm not coding</b> I'm probably gaming, watching anime, or

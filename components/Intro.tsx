@@ -28,7 +28,7 @@ function Intro() {
     let word = "";
     {
       option === 0
-        ? (word = "Web developer")
+        ? (word = "web developer")
         : option === 1
         ? (word = "student")
         : option === 2
@@ -80,7 +80,7 @@ function Intro() {
         data-aos-delay="100"
         className="text-2xl md:text-3xl xl:text-4xl flex gap-x-2 justify-center sm:justify-start"
       >
-        <h2>19 year old</h2>
+        <h2>20 year old</h2>
         <div className="flex gap">
           <b>
             {option === 0 ? (
