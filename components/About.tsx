@@ -21,7 +21,7 @@ function About() {
           for web development.
         </p>
         <p>
-          Currently I'm a second year Computer Science student at Monash
+          Currently I'm a final year Computer Science student at Monash
           University Malaysia, specialising in Advanced Computer Science.
         </p>
         <p>
