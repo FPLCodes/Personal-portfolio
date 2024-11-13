@@ -4,7 +4,7 @@ import { StaticImageData } from "next/image";
 interface Props {
   title: string;
   image: StaticImageData;
-  github: string;
+  github?: string;
   site?: string;
   description: string;
   tags: Array<string>;
@@ -30,20 +30,25 @@ export default function Project(props: Props) {
           </div>
           <div
             style={{
-              justifyContent: props.site ? "space-between" : "center",
+              justifyContent:
+                props.github && props.site ? "space-between" : "center",
             }}
             className="flex px-4"
           >
-            <div className="line">
-              <a
-                href={props.github}
-                target="_blank"
-                className="font-bold transition-all github-text"
-              >
-                GITHUB
-              </a>
-              <div className="bg-gray-800 w-0 transition-all line-bg"></div>
-            </div>
+            {props.github ? (
+              <div className="line">
+                <a
+                  href={props.github}
+                  target="_blank"
+                  className="font-bold transition-all github-text"
+                >
+                  GITHUB
+                </a>
+                <div className="bg-gray-800 w-0 transition-all line-bg"></div>
+              </div>
+            ) : (
+              <></>
+            )}
 
             {props.site ? (
               <div className="line">

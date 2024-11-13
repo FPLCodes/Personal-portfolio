@@ -41,19 +41,24 @@ const sections = [
     title: "Front-end",
     icons: [
       {
-        src: "https://www.svgrepo.com/show/7866/html.svg",
-        alt: "HTML icon",
-        label: "HTML",
-      },
-      {
-        src: "https://www.svgrepo.com/show/134149/css.svg",
-        alt: "CSS icon",
-        label: "CSS",
+        src: "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
+        alt: "Next.JS icon",
+        label: "Next",
       },
       {
         src: "https://www.svgrepo.com/show/354259/react.svg",
         alt: "React icon",
         label: "React",
+      },
+      {
+        src: "react-native.png",
+        alt: "React Native icon",
+        label: "React Native",
+      },
+      {
+        src: "flutter.png",
+        alt: "Flutter icon",
+        label: "Flutter",
       },
       {
         src: "https://www.svgrepo.com/show/354528/vue.svg",
@@ -64,11 +69,6 @@ const sections = [
         src: "https://www.svgrepo.com/show/374109/svelte.svg",
         alt: "Svelte icon",
         label: "Svelte",
-      },
-      {
-        src: "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
-        alt: "Next.JS icon",
-        label: "Next",
       },
       {
         src: "https://www.svgrepo.com/show/354431/tailwindcss-icon.svg",
@@ -105,6 +105,11 @@ const sections = [
         alt: "MongoDB icon",
         label: "MongoDB",
       },
+      {
+        src: "postman.svg",
+        alt: "Postman icon",
+        label: "Postman",
+      },
     ],
   },
   {
@@ -124,6 +129,11 @@ const sections = [
         src: "https://www.svgrepo.com/show/303239/raspberry-pi-logo.svg",
         alt: "Raspberry pi icon",
         label: "Raspberry pi",
+      },
+      {
+        src: "solana.png",
+        alt: "Solana icon",
+        label: "Solana",
       },
     ],
   },
@@ -148,12 +158,12 @@ function Skills() {
               data-aos="fade-right"
               data-aos-duration="700"
               data-aos-once="true"
-              className="space-y-10"
+              className="space-y-2"
             >
               <p className="text-center sm:text-left text-lg font-bold">
                 {section.title}
               </p>
-              <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
+              <div className="flex flex-wrap gap-6 h-36 items-center sm:px-8 justify-center sm:justify-start">
                 {section.icons.map((icon, index) => (
                   <div
                     data-aos="fade-right"
@@ -161,13 +171,14 @@ function Skills() {
                     data-aos-delay={((index + 1) * 100).toString()}
                     data-aos-once="true"
                     key={index}
-                    className="transition-all hover:scale-105"
+                    className="my-2 overflow-visible"
                   >
                     <Image
                       src={icon.src}
                       width={75}
                       height={75}
                       alt={icon.alt}
+                      className="transition-all duration-300 hover:-translate-y-1"
                     />
                     <p>{icon.label}</p>
                   </div>
