@@ -158,12 +158,12 @@ function Skills() {
               data-aos="fade-right"
               data-aos-duration="700"
               data-aos-once="true"
-              className="space-y-2"
+              className="space-y-10"
             >
               <p className="text-center sm:text-left text-lg font-bold">
                 {section.title}
               </p>
-              <div className="flex flex-wrap gap-6 h-36 items-center sm:px-8 justify-center sm:justify-start">
+              <div className="flex flex-wrap gap-6 sm:px-8 justify-center sm:justify-start">
                 {section.icons.map((icon, index) => (
                   <div
                     data-aos="fade-right"
@@ -171,14 +171,13 @@ function Skills() {
                     data-aos-delay={((index + 1) * 100).toString()}
                     data-aos-once="true"
                     key={index}
-                    className="my-2 overflow-visible"
+                    className=""
                   >
                     <Image
                       src={icon.src}
                       width={75}
                       height={75}
                       alt={icon.alt}
-                      className="transition-all duration-300 hover:-translate-y-1"
                     />
                     <p>{icon.label}</p>
                   </div>

@@ -10,7 +10,7 @@ function About() {
       <div className="pt-16 font-light space-y-6 lg:w-2/3">
         <p>
           Hey there, I'm Sahab. I love coding and pretty much any tech-related
-          stuff 👨‍💻
+          stuff 👨
         </p>
         <p>
           I've always enjoyed creating things and wanted to make my own video
