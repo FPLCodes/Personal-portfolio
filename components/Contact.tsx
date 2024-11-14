@@ -12,7 +12,7 @@ function Contact() {
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-once="true"
-      className="mt-48 w-full px-2 md:px-4"
+      className="mt-48 mb-10 w-full px-2 md:px-4"
     >
       <h1 className="text-4xl text-orange-500 font-bold mb-8">Get in touch</h1>
 

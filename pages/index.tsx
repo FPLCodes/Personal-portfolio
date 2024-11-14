@@ -92,8 +92,6 @@ const Home: NextPage = () => {
 
         <Contact />
       </main>
-
-      <Footer />
     </div>
   );
 };

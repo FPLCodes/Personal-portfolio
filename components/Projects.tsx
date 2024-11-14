@@ -23,8 +23,8 @@ function Projects() {
           "Next.js",
           "TailwindCSS",
           "Firebase",
-          "Agile",
-          "Scrum",
+          "Chart.js",
+          "ShadCN",
         ]}
       />
 
