@@ -5,6 +5,8 @@ import Mintopia from "../public/projects/mintopia.gif";
 import KanbanCrew from "../public/projects/kanban-crew.gif";
 import Project from "./Project";
 
+// TODO: Add loading spinner while images are loading
+
 function Projects() {
   return (
     <section
