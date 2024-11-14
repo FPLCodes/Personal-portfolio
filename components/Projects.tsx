@@ -1,7 +1,7 @@
 import SocialLiteDemo from "../public/projects/SocialLite demo.gif";
 import TetrisTS from "../public/projects/tetrisTS.png";
 import TrickyTacToeDemo from "../public/projects/tricky-tac-toe demo.gif";
-import AniCountdown from "../public/projects/AniCountdown.png";
+import Mintopia from "../public/projects/mintopia.gif";
 import US_GDP from "../public/projects/US-GDP.png";
 import Project from "./Project";
 
@@ -30,6 +30,15 @@ function Projects() {
       />
 
       <Project
+        title="Mintopia"
+        image={Mintopia}
+        github="https://github.com/FPLCodes/Mintopia"
+        site="https://mintopia.vercel.app/"
+        description="Decentralized platform to create and manage NFTs on the Solana blockchain. Built with modern web technologies and powered by the Metaplex ecosystem, Mintopia simplifies NFT management with a sleek, user-friendly interface."
+        tags={["TypeScript", "Next.js", "TailwindCSS", "Solana", "Metaplex"]}
+      />
+
+      <Project
         title="TetrisTS"
         image={TetrisTS}
         github="https://github.com/FPLCodes/TetrisTS"
@@ -47,15 +56,6 @@ function Projects() {
         description="Engage with a classic game of Tic-tac-toe, now elevated with an unbeatable AI powered by the minimax algorithm.
         Perfect your strategies and test the limits of possibility."
         tags={["JavaScript", "Svelte", "Algorithm"]}
-      />
-
-      <Project
-        title="AniCountdown bot"
-        image={AniCountdown}
-        github="https://github.com/FPLCodes/Anime-Countdown-Bot"
-        description="Stay ahead with an anime release countdown bot for Discord. Leveraging Puppeteer for live data retrieval and discord.js
-        for dynamic display, never miss an episode drop again."
-        tags={["JavaScript", "Discord.js", "Puppeteer"]}
       />
     </section>
   );
