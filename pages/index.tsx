@@ -11,7 +11,6 @@ import Skills from "../components/Skills";
 import Certificates from "../components/Certificates";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   useEffect(() => {
