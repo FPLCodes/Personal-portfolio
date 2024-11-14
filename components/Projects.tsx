@@ -2,7 +2,7 @@ import SocialLiteDemo from "../public/projects/SocialLite demo.gif";
 import TetrisTS from "../public/projects/tetrisTS.png";
 import TrickyTacToeDemo from "../public/projects/tricky-tac-toe demo.gif";
 import Mintopia from "../public/projects/mintopia.gif";
-import US_GDP from "../public/projects/US-GDP.png";
+import KanbanCrew from "../public/projects/kanban-crew.gif";
 import Project from "./Project";
 
 function Projects() {
@@ -21,12 +21,20 @@ function Projects() {
       />
 
       <Project
-        title="KabanCrew"
-        image={US_GDP}
+        title="KanbanCrew"
+        image={KanbanCrew}
+        github="https://github.com/SilverMarcs/KanbanCrew"
         site="https://kanban-crew.vercel.app/"
         description="A project management tool for teams to collaborate and manage tasks efficiently following an Agile Scrum methodology.
         Contains product/sprint backlogs, user stories, sprints, burndown charts, and more."
-        tags={["TypeScript", "Next.js", "TailwindCSS", "Firebase"]}
+        tags={[
+          "TypeScript",
+          "Next.js",
+          "TailwindCSS",
+          "Firebase",
+          "Agile",
+          "Scrum",
+        ]}
       />
 
       <Project
@@ -35,7 +43,14 @@ function Projects() {
         github="https://github.com/FPLCodes/Mintopia"
         site="https://mintopia.vercel.app/"
         description="Decentralized platform to create and manage NFTs on the Solana blockchain. Built with modern web technologies and powered by the Metaplex ecosystem, Mintopia simplifies NFT management with a sleek, user-friendly interface."
-        tags={["TypeScript", "Next.js", "TailwindCSS", "Solana", "Metaplex"]}
+        tags={[
+          "TypeScript",
+          "Next.js",
+          "TailwindCSS",
+          "Solana",
+          "Metaplex",
+          "Blockchain",
+        ]}
       />
 
       <Project
