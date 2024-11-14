@@ -12,15 +12,6 @@ function Projects() {
       className="flex flex-col w-full gap-y-72 mt-40 px-2 md:px-0"
     >
       <Project
-        title="SocialLite"
-        image={SocialLiteDemo}
-        github="https://github.com/FPLCodes/SocialLite"
-        description="Connect instantly with others using SocialLite, powered by VueJS for seamless interactivity. Enjoy secure login via Firebase
-        and real-time chat with messages safeguarded in Firestore."
-        tags={["JavaScript", "Vue.js", "Firebase", "MongoDB"]}
-      />
-
-      <Project
         title="KanbanCrew"
         image={KanbanCrew}
         github="https://github.com/SilverMarcs/KanbanCrew"
@@ -51,6 +42,15 @@ function Projects() {
           "Metaplex",
           "Blockchain",
         ]}
+      />
+
+      <Project
+        title="SocialLite"
+        image={SocialLiteDemo}
+        github="https://github.com/FPLCodes/SocialLite"
+        description="Connect instantly with others using SocialLite, powered by VueJS for seamless interactivity. Enjoy secure login via Firebase
+        and real-time chat with messages safeguarded in Firestore."
+        tags={["JavaScript", "Vue.js", "Firebase", "MongoDB"]}
       />
 
       <Project
